@@ -7,14 +7,71 @@ html(lang="en")
 
     link(rel='stylesheet', type='text/css', href='dist/styles/main.css')
   body
-    header
-      h1#name=name
-      p#subtitle=subtitle
+    .container
 
-    ul#personalDetails
-      li.
-        Email:
-        #[a(href='mailto:'+personalDetails.email) #{personalDetails.email}]
-      li.
-        Phone:
-        #[a(href='tel:'+personalDetails.phoneIntl) #{personalDetails.phone}]
+      // Header
+      header.row
+        .col-md-8
+          .media
+            .media-left
+              // Photo
+              img#head.media-object.img-circle(src='dist/images/head.jpg')
+            .media-body
+              // Name & title
+              h1#name=name
+              p#title=title
+        .col-md-4
+          // Personal details
+          ul#personalDetails
+            li.
+              Email:
+              #[a(href='mailto:'+personalDetails.email) #{personalDetails.email}]
+      
+      section#summary
+        p=summary
+
+      section#skillGroups
+        h2 Skills
+
+        .row
+          each skillGroup in skillGroups
+            section#skillGroup.col-lg-3.col-md-4.col-sm-6
+              h3=skillGroup.title
+              ul
+                each item in skillGroup.items
+                  li=item
+
+      section#jobs
+        h2 Professional experience
+
+        each job in jobs
+          section#job
+            h3=job.title
+            ul
+              each item in job.descriptionItems
+                li=item
+
+      section#projects
+        h2 Projects &amp; publications
+
+        each project in projects
+          section#project
+            h3=project.title
+            ul
+              each item in project.descriptionItems
+                li=item
+
+      section#education
+        h2 Education
+
+        each school in education
+          section#school
+            h3=school.title
+            ul
+              each item in school.descriptionItems
+                li=item
+
+      section#interests
+        h2 Interests
+        p=interests.join(", ")
+

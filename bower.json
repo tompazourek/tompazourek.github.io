@@ -2,14 +2,14 @@
   "name": "CV",
   "private": true,
   "dependencies": {
-    "pt-sans": "*",
     "elegant-icons": "*",
-    "golden-grid-system": "*"
+    "bootstrap": "~3.3.4",
+    "source-sans-pro": "release"
   },
   "overrides": {
-    "pt-sans": {
+    "source-sans-pro": {
       "main": [
-        "fonts/**/*"
+        "{EOT,WOFF,OTF,TTF}/**/*"
       ]
     },
     "elegant-icons": {
@@ -17,9 +17,9 @@
         "fonts/*"
       ]
     },
-    "golden-grid-system": {
+    "bootstrap": {
       "main": [
-        "*.less"
+        "less/**/*.less"
       ]
     }
   }

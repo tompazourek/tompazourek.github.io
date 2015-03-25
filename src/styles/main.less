@@ -1,6 +1,103 @@
-// import the Golden Grid System
-@import "../third-party/golden-grid-system/GGS";
+@import "fonts.less";
+@import "bootstrap.less";
+@import "baseline.less";
+
+body {
+	font-weight: 300;
+	min-width: 320px;
+}
+
+h1 { font-weight: 700; }
+h2 { font-weight: 700; }
+h3 { font-weight: 400; }
+h4 { font-weight: 300; }
+h5 { font-weight: 200; }
+h6 { font-weight: 100; }
 
 header {
+	padding: @baseline 0;
+
+	.media-left {
+		padding-right: @baseline;
+	}
+
+	#head {
+		width: 5 * @baseline;
+		height: 5 * @baseline;
+
+		@media (max-width: @screen-sm-max) {
+			width: 4 * @baseline;
+			height: 4 * @baseline;
+			margin: .5*@baseline 0;
+		}
+		@media (max-width: 550px) {
+		    width: 3 * @baseline;
+			height: 3 * @baseline;
+			margin: 1*@baseline 0;
+		}
+		@media (max-width: 460px) {
+		    width: 2 * @baseline;
+			height: 2 * @baseline;
+			margin: 1.5*@baseline 0;
+		}
+	}
+
+	#name {
+		// compensate for h1
+		margin-top: @baseline;
+		margin-bottom: 0;
+
+		@media (max-width: 550px) {
+		    font-size: @font-size-h2;
+		}
+		@media (max-width: 460px) {
+		    font-size: @font-size-h3;
+		}
+	}
+
+	#title {
+		font-size: @font-size-h3;
+		margin-top: 0;
+		font-weight: 400;
+
+		@media (max-width: 550px) {
+		    font-size: @font-size-h4;
+		}
+	}
+
+	#personalDetails {
+		margin-top: @baseline;
+		text-align: right;
+		list-style-type: none;
+		margin: 0;
+
+		@media (max-width: 460px) {
+			text-align: left;
+		}
+	}
+
 	
+}
+
+section {
+
+	p {
+		text-align: justify;
+	}
+
+	&#summary {
+		font-size: @font-size-large;
+		line-height: @baseline;
+
+		@media (max-width: @screen-xs-max) {
+			font-size: @font-size-base;
+		}
+	}
+
+	&#skillGroups {
+		h2 {
+			margin-bottom: 0;
+		}
+	}
+
 }

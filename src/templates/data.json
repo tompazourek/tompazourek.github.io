@@ -1,7 +1,7 @@
 {
 
 	"name": "Tomáš Pažourek",
-	"subtitle": "Software Engineer",
+	"title": "Software Engineer",
 
 	"personalDetails": {
 		"email": "tom.pazourek@gmail.com"
@@ -25,14 +25,6 @@
 			]
 		},
 		{
-			"title": "Databases",
-			"items": [
-				"Good knowledge of SQL language",
-				"Experience with Oracle MySQL",
-				"Experience with Microsoft SQL Server, MySQL, SQLite, Oracle RDBMS"
-			]
-		},
-		{
 			"title": "Web development",
 			"items": [
 				"WS API design using REST, SOAP and XML-RPC",
@@ -46,6 +38,14 @@
 			]
 		},
 		{
+			"title": "Databases",
+			"items": [
+				"Good knowledge of SQL language",
+				"Experience with Oracle MySQL",
+				"Experience with Microsoft SQL Server, MySQL, SQLite, Oracle RDBMS"
+			]
+		},
+		{
 			"title": "Other",
 			"items": [
 				"Experience with several projects for touch-based user interfaces",
@@ -53,15 +53,6 @@
 				"Experience with functional programming paradigm (Haskell) and logical programming paradigm (DataLog, Yices SMT Solver)",
 				"Typesetting in LaTeX",
 				"Good knowledge of Adobe Photoshop"
-			]
-		},
-		{
-			"title": "Language proficiency",
-			"items": [
-				"English (fluent technical)",
-				"Czech (native speaker)",
-				"Spanish (learning beginner)",
-				"German (poor)"
 			]
 		}
 	],
@@ -139,22 +130,22 @@
 	"projects": [
 		{
 			"title": "Colourful .NET",
-			"descriptionItems": [ "hobby project, open-source library for working with color spaces" ],
+			"descriptionItems": [ "Hobby project, open-source library for working with color spaces" ],
 			"url": "https://github.com/tompazourek/Colourful"
 		},
 		{
 			"title": "Endless .NET",
-			"descriptionItems": [ "hobby project, open-source library that extends the C# functional paradigm, focuses mainly on infinite sequences" ],
+			"descriptionItems": [ "Hobby project, open-source library that extends the C# functional paradigm, focuses mainly on infinite sequences" ],
 			"url": "https://github.com/tompazourek/Endless"
 		},
 		{
 			"title": "Rationals .NET",
-			"descriptionItems": [ "implementation of arbitrary length and arbitrary precision rational number arithmetics for .NET framework" ],
+			"descriptionItems": [ "Implementation of arbitrary length and arbitrary precision rational number arithmetics for .NET framework" ],
 			"url": "https://github.com/tompazourek/Rationals"
 		},
 		{
 			"title": "intl-quotes",
-			"descriptionItems": [ "small Bower package that ensures typographically correct quotation marks in various languages" ],
+			"descriptionItems": [ "Small Bower package that ensures typographically correct quotation marks in various languages" ],
 			"url": "https://github.com/tompazourek/intl-quotes"
 		},
 		{

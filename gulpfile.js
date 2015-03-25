@@ -1,6 +1,8 @@
 'use strict';
 
 var fs = require('fs');
+var http = require('http');
+var st = require('st');
 
 var gulp = require('gulp');
 var plumber = require('gulp-plumber');
@@ -12,13 +14,15 @@ var minifyCSS = require('gulp-minify-css');
 var rimraf = require('gulp-rimraf');
 var jade = require('gulp-jade');
 var data = require('gulp-data');
+var livereload = require('gulp-livereload');
 
 var paths = {
 
     mainBowerComponentsSrc: './bower_components',
     mainBowerComponentsDest: './src/third-party',
 
-    lessSrc: './src/styles/*.less',
+    lessSrc: './src/styles/main.less',
+    lessWatch: './src/styles/*.less',
     lessDest: './dist/styles',
     lessClean: './dist/styles',
 
@@ -58,7 +62,17 @@ gulp.task('less-dev', ['clean-less', 'main-bower-files'], function() {
         .pipe(sourcemaps.init())
         .pipe(less())
         .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest(paths.lessDest));
+        .pipe(gulp.dest(paths.lessDest))
+        .pipe(livereload());
+});
+gulp.task('less-dev-fast', function() {
+    return gulp.src(paths.lessSrc)
+        .pipe(plumber(plumberOptions))
+        .pipe(sourcemaps.init())
+        .pipe(less())
+        .pipe(sourcemaps.write('.'))
+        .pipe(gulp.dest(paths.lessDest))
+        .pipe(livereload());
 });
 gulp.task('less', ['clean-less', 'main-bower-files'], function() {
     return gulp.src(paths.lessSrc)
@@ -83,7 +97,8 @@ gulp.task('jade-dev', ['clean-jade'], function() {
         .pipe(plumber(plumberOptions))
         .pipe(data(getJadeData))
         .pipe(jade({ pretty: true }))
-        .pipe(gulp.dest(paths.jadeDest));
+        .pipe(gulp.dest(paths.jadeDest))
+        .pipe(livereload());
 });
 gulp.task('jade', ['clean-jade'], function() {
     return gulp.src(paths.jadeSrc)
@@ -128,8 +143,19 @@ gulp.task('default', ['minify-css', 'jade', 'copy-fonts']);
 // compile for development
 gulp.task('dev', ['less-dev', 'jade-dev', 'copy-fonts', 'copy-images']);
 
+// start static server
+gulp.task('server', function(done) {
+  http.createServer(
+    st({ path: __dirname, index: 'index.html', cache: false })
+  ).listen(8080, done);
+});
+
 // compile on the fly for development
 gulp.task('watch', ['dev'], function() {
-    gulp.watch(paths.lessSrc, ['less-dev']);
+    livereload.listen();
+    gulp.watch(paths.lessWatch, ['less-dev-fast']);
     gulp.watch([paths.jadeSrc, paths.jadeData], ['jade-dev']);
 });
+
+// start both server and watch (both needed for livereload)
+gulp.task('server-watch', ['server', 'watch']);
