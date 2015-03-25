@@ -1,0 +1,26 @@
+{
+  "name": "CV",
+  "private": true,
+  "dependencies": {
+    "pt-sans": "*",
+    "elegant-icons": "*",
+    "golden-grid-system": "*"
+  },
+  "overrides": {
+    "pt-sans": {
+      "main": [
+        "fonts/**/*"
+      ]
+    },
+    "elegant-icons": {
+      "main": [
+        "fonts/*"
+      ]
+    },
+    "golden-grid-system": {
+      "main": [
+        "*.less"
+      ]
+    }
+  }
+}
