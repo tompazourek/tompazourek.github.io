@@ -34,7 +34,7 @@ var paths = {
     jadeDest: '.',
     jadeClean: './index.html',
 
-    copyFontsSrc: './src/third-party/**/*.{ttf,woff,woff2,eot,svg}',
+    copyFontsSrc: './src/third-party/**/*.{ttf,otf,woff,woff2,eot,svg}',
     copyFontsDest: './dist/third-party',
     copyFontsClean: './dist/third-party',
     
