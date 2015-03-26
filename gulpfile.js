@@ -138,7 +138,7 @@ gulp.task('clean-copy-images', function() {
 gulp.task('clean', ['clean-main-bower-files', 'clean-less', 'clean-jade', 'clean-copy-fonts', 'clean-copy-images']);
 
 // compile for production
-gulp.task('default', ['minify-css', 'jade', 'copy-fonts']);
+gulp.task('default', ['minify-css', 'jade', 'copy-fonts', 'copy-images']);
 
 // compile for development
 gulp.task('dev', ['less-dev', 'jade-dev', 'copy-fonts', 'copy-images']);
