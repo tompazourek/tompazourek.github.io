@@ -2,9 +2,9 @@
   "name": "CV",
   "private": true,
   "dependencies": {
-    "elegant-icons": "*",
     "bootstrap": "~3.3.4",
-    "source-sans-pro": "release"
+    "source-sans-pro": "release",
+    "font-awesome": "~4.3.0"
   },
   "overrides": {
     "source-sans-pro": {
@@ -12,9 +12,10 @@
         "{EOT,WOFF,OTF,TTF}/**/*"
       ]
     },
-    "elegant-icons": {
+    "font-awesome": {
       "main": [
-        "fonts/*"
+        "fonts/**/*",
+        "less/**/*.less"
       ]
     },
     "bootstrap": {

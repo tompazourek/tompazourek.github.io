@@ -1,4 +1,5 @@
 {
+	"lastModified": "2015-03-26",
 
 	"name": "Tomáš Pažourek",
 	"title": "Software Engineer",
@@ -9,7 +10,9 @@
 
 	"profiles": {
 		"github": "https://github.com/tompazourek/",
-		"stackOverflow": "http://stackoverflow.com/users/108374/tomp"
+		"stackOverflow": "http://stackoverflow.com/users/108374/tomp",
+		"linkedIn": "http://cz.linkedin.com/in/tpazourek/en",
+		"skype": "skype:blizzy01?userinfo"
 	},
 
 	"summary": "I am a creative and ambicious software engineer from Czech Republic. I have extensive experience with the development of applications for desktop, web and embedded devices. My current focus revolves mostly around web development and technologies surrounding .NET Framework.",
@@ -31,7 +34,7 @@
 				"Good knowledge of HTML5, CSS",
 				"Good knowledge of JavaScript and jQuery",
 				"Basics of AngularJS",
-				"Experience with LESS, Bootstrap, Bower, and Gulp.js",
+				"Experience with LESS, Jade, Bootstrap, Bower, and Gulp.js",
 				"Experience with responsive webdesign",
 				"Web development in PHP (Model-View-Presenter pattern), knowledge of Nette Framework",
 				"Web development in ASP.NET (both plain ASP.NET and MVC)"
@@ -64,6 +67,7 @@
 				"name": "Y Soft Corporation, a.s.",
 				"url": "http://www.ysoft.com"
 			},
+			"location": "Brno, Czech Republic",
 			"time": {
 				"from": "February 2015",
 				"to": "present"
@@ -81,6 +85,7 @@
 				"name": "Hano AS",
 				"url": "http://hano.no"
 			},
+			"location": "Billingstad, Norway",
 			"time": {
 				"from": "February 2014",
 				"to": "February 2015"
@@ -97,6 +102,7 @@
 				"name": "IReSoft, s.r.o.",
 				"url": "http://www.iresoft.cz"
 			},
+			"location": "Brno, Czech Republic",
 			"time": [
 				{
 					"from": "July 2011",
@@ -117,8 +123,11 @@
 		},
 		{
 			"title": "Freelance web developer",
-			"from": "2007",
-			"to": "2011",
+			"location": "Zlín, Czech Republic",
+			"time" : {
+				"from": "2007",
+				"to": "2011"
+			},
 			"descriptionItems": [
 				"Development of small MVP web applications in Nette Framework on PHP platform",
 				"Custom content-management systems and intranet applications for small bussinesses",
@@ -155,7 +164,7 @@
 				"Bachelor thesis",
 				"Available only in czech language"
 			],
-			"url": "is.muni.cz/th/359464/fi_b"
+			"url": "http://is.muni.cz/th/359464/fi_b"
 		}
 	],
 
@@ -199,18 +208,6 @@
 				"Focused on theoretical CS, programming languages and paradigms, basics of software engineering, computer security and database modeling"
 			]
 		}
-	],
-
-	"interests": [
-		"new technologies and programming languages",
-		"IT security",
-		"data mining",
-		"information retrieval",
-		"travelling",
-		"music theory",
-		"playing guitar",
-		"playing drums",
-		"running"
 	]
 
 }

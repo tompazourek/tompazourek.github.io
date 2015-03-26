@@ -1,5 +1,6 @@
 @import "fonts.less";
 @import "bootstrap.less";
+@import "font-awesome.less";
 @import "baseline.less";
 
 body {
@@ -14,34 +15,46 @@ h4 { font-weight: 300; }
 h5 { font-weight: 200; }
 h6 { font-weight: 100; }
 
+a {
+	text-decoration: none;
+	border-bottom: 2px solid @gray-light;
+	&:hover {
+		border-bottom-color: @link-color;
+	}
+}
+
+ul {
+	list-style: square;
+}
+
+// Icon with space before text
+.icon-spaced {
+	margin-right: .5em;
+}
+
 header {
 	padding: @baseline 0;
 
+	// Photo container
 	.media-left {
 		padding-right: @baseline;
+		@media (max-width: @screen-xs-max) {
+			display: block;
+			text-align: center;
+		}
 	}
 
+	// Photo
 	#head {
 		width: 5 * @baseline;
 		height: 5 * @baseline;
 
-		@media (max-width: @screen-sm-max) {
-			width: 4 * @baseline;
-			height: 4 * @baseline;
-			margin: .5*@baseline 0;
-		}
-		@media (max-width: 550px) {
-		    width: 3 * @baseline;
-			height: 3 * @baseline;
-			margin: 1*@baseline 0;
-		}
-		@media (max-width: 460px) {
-		    width: 2 * @baseline;
-			height: 2 * @baseline;
-			margin: 1.5*@baseline 0;
+		@media (max-width: @screen-xs-max) {
+			display: inline-block;
 		}
 	}
 
+	// Name
 	#name {
 		// compensate for h1
 		margin-top: @baseline;
@@ -53,8 +66,12 @@ header {
 		@media (max-width: 460px) {
 		    font-size: @font-size-h3;
 		}
+		@media (max-width: @screen-xs-max) {
+			text-align: center;
+		}
 	}
 
+	// Title
 	#title {
 		font-size: @font-size-h3;
 		margin-top: 0;
@@ -63,22 +80,68 @@ header {
 		@media (max-width: 550px) {
 		    font-size: @font-size-h4;
 		}
+		@media (max-width: @screen-xs-max) {
+			text-align: center;
+		}
 	}
 
+	// Personal details
 	#personalDetails {
-		margin-top: @baseline;
 		text-align: right;
 		list-style-type: none;
 		margin: 0;
 
-		@media (max-width: 460px) {
-			text-align: left;
+		@media (max-width: @screen-xs-max) {
+			text-align: center;
+		}
+
+		@media (min-width: @screen-md-min) {
+			padding-top: @baseline;
 		}
 	}
 
-	
+	// Profile badges (icons)
+	#profileBadges {
+		margin-top: .5*@baseline;
+		a {
+			border-bottom: none;
+			margin-left: .75em;
+			color: @gray-light;
+			&:hover {
+				color: @link-color;
+			}
+		}
+	}
+
 }
 
+// Details about a section
+.subheading {
+	font-size: @font-size-small;
+	margin: -@baseline 0 -.5*@baseline 0;
+	color: @gray;
+	list-style: none;
+
+	li {
+		float: left;
+		&:after {
+			content: '\25c6';
+			font-size: (@font-size-base * 0.4);
+			line-height: @baseline;
+			vertical-align: middle;
+			padding: 0 @baseline/3;
+			color: lighten(@gray-base, 66%);
+		}
+		&:last-child:after {
+			content: '';
+			padding: 0;
+		}
+	}
+
+	.clearfix;
+}
+
+// Individual sections
 section {
 
 	p {
@@ -88,6 +151,7 @@ section {
 	&#summary {
 		font-size: @font-size-large;
 		line-height: @baseline;
+		font-weight: 400;
 
 		@media (max-width: @screen-xs-max) {
 			font-size: @font-size-base;
@@ -100,4 +164,16 @@ section {
 		}
 	}
 
+}
+
+// Footer
+footer {
+	border-top: 1px solid @gray-lighter;
+	padding: 1*@baseline 0;
+	margin: 2*@baseline 0;
+	color: @gray-light;
+	font-style: italic;
+	p {
+		text-align: center;
+	}
 }

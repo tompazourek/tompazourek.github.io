@@ -9,69 +9,155 @@ html(lang="en")
   body
     .container
 
-      // Header
+      //- Header
       header.row
         .col-md-8
           .media
             .media-left
-              // Photo
+              //- Photo
               img#head.media-object.img-circle(src='dist/images/head.jpg')
             .media-body
-              // Name & title
+              //- Name & title
               h1#name=name
               p#title=title
         .col-md-4
-          // Personal details
+          //- Personal details
           ul#personalDetails
-            li.
-              Email:
-              #[a(href='mailto:'+personalDetails.email) #{personalDetails.email}]
+
+            //- Email
+            li
+              span.fa.fa-envelope-o.icon-spaced
+              a(href='mailto:'+personalDetails.email) #{personalDetails.email}
+
+            //- Profile badges
+            li#profileBadges
+
+              a(href=profiles.github target='_blank' title='GitHub profile')
+                span.fa.fa-2x.fa-github
+
+              a(href=profiles.stackOverflow target='_blank' title='Stack Overflow profile')
+                span.fa.fa-2x.fa-stack-overflow
+
+              a(href=profiles.linkedIn target='_blank' title='LinkedIn profile')
+                span.fa.fa-2x.fa-linkedin
+
+              a(href=profiles.skype target='_blank' title='Skype profile')
+                span.fa.fa-2x.fa-skype
       
+      //- Summary
       section#summary
         p=summary
 
+      //- Skills
       section#skillGroups
         h2 Skills
 
         .row
           each skillGroup in skillGroups
+
+            //- Skill group
             section#skillGroup.col-lg-3.col-md-4.col-sm-6
+
+              //- Title
               h3=skillGroup.title
+
+              //- Descrtiption
               ul
                 each item in skillGroup.items
                   li=item
 
+      //- Professional experience
       section#jobs
         h2 Professional experience
 
         each job in jobs
+          //- Job
           section#job
+
+            //- Title
             h3=job.title
+
+            ul.subheading
+              //- Company
+              if (job.company)
+                li.
+                  #[a(href=job.company.url target='_blank') #{job.company.name}]
+
+              //- Location
+              if (job.location)
+                li=job.location
+              
+              //- Time
+              if (Array.isArray(job.time))
+
+                //- List of times
+                each time in job.time
+                  li
+                    span=time.from
+                    span &ndash;
+                    span=time.to
+              else
+
+                //- Single time
+                li
+                  span=job.time.from
+                  span &ndash;
+                  span=job.time.to
+
+            //- Description
             ul
               each item in job.descriptionItems
                 li=item
 
+      //- Projects & publications
       section#projects
         h2 Projects &amp; publications
 
         each project in projects
+
+          //- Project
           section#project
+
+            //- Title
             h3=project.title
+
+            //- URL
+            if (project.url)
+              ul.subheading
+                li.
+                  #[a(href=project.url target='_blank') #{project.url}]
+
+            //- Description
             ul
               each item in project.descriptionItems
                 li=item
 
+      //- Education
       section#education
         h2 Education
 
+        //- School
         each school in education
           section#school
+
+            //- Title
             h3=school.title
+
+            //- Details
+            ul.subheading
+              li=school.institute
+              li=school.location
+              li=school.type
+              li
+                span=school.time.from
+                span &ndash;
+                span=school.time.to
+
+            //- Description
             ul
               each item in school.descriptionItems
                 li=item
 
-      section#interests
-        h2 Interests
-        p=interests.join(", ")
-
+      //- Footer
+      footer
+        p Last modified on #{lastModified}.
