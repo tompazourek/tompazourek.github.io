@@ -48,7 +48,8 @@
 			"title": "Databases",
 			"items": [
 				"Good knowledge of SQL language",
-				"Experience with Oracle MySQL",
+				"ER diagramming",
+				"Stored procedures in T-SQL",
 				"Experience with Microsoft SQL Server, MySQL, SQLite, Oracle RDBMS"
 			]
 		},
