@@ -37,7 +37,7 @@
 				"Good knowledge of HTML5, CSS",
 				"Good knowledge of JavaScript and jQuery",
 				"Basics of AngularJS",
-				"Experience with LESS, Jade, Bootstrap, Bower, and Gulp.js",
+				"Experience with LESS, Jade, Bootstrap, Bower, and Gulp",
 				"Experience with responsive webdesign",
 				"Web development in PHP (Model-View-Presenter pattern), knowledge of Nette Framework",
 				"Web development in ASP.NET (both plain ASP.NET and MVC)"
@@ -162,6 +162,11 @@
 			"title": "intl-quotes",
 			"descriptionItems": [ "Small Bower package that ensures typographically correct quotation marks in various languages" ],
 			"url": "https://github.com/tompazourek/intl-quotes"
+		},
+		{
+			"title": "tompazourek.github.io",
+			"descriptionItems": [ "This personal page (CV) open-sourced" ],
+			"url": "http://tompazourek.github.io/"
 		},
 		{
 			"title": "Web services using REST architecture on .NET platform",
