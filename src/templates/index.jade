@@ -7,7 +7,7 @@ html(lang="en")
 
     link(rel='stylesheet', type='text/css', href='dist/styles/main.css')
   body
-    .container
+    .container(itemscope id='cv' itemtype='http://schema.org/Person')
 
       //- Header
       header.row
@@ -15,11 +15,14 @@ html(lang="en")
           .media
             .media-left
               //- Photo
-              img#head.media-object.img-circle(src='dist/images/head.jpg')
+              img#head.media-object.img-circle(src='dist/images/head.jpg' itemprop='image' alt='Photo of #{name}')
             .media-body
               //- Name & title
-              h1#name=name
-              p#title=title
+              h1#name(itemprop='name')
+                span(itemprop='givenName')=givenName
+                =' '
+                span(itemprop='familyName')=familyName
+              p#title(itemprop='jobTitle')=title
         .col-md-4
           //- Personal details
           ul#personalDetails
@@ -27,25 +30,25 @@ html(lang="en")
             //- Email
             li
               span.fa.fa-envelope-o.icon-spaced
-              a(href='mailto:'+personalDetails.email) #{personalDetails.email}
+              a(href='mailto:'+personalDetails.email itemprop='email') #{personalDetails.email}
 
             //- Profile badges
             li#profileBadges
 
-              a(href=profiles.github target='_blank' title='GitHub profile')
+              a(href=profiles.github itemprop='url' target='_blank' title='GitHub profile')
                 span.fa.fa-2x.fa-github
 
-              a(href=profiles.stackOverflow target='_blank' title='Stack Overflow profile')
+              a(href=profiles.stackOverflow itemprop='url' target='_blank' title='Stack Overflow profile')
                 span.fa.fa-2x.fa-stack-overflow
 
-              a(href=profiles.linkedIn target='_blank' title='LinkedIn profile')
+              a(href=profiles.linkedIn itemprop='url' target='_blank' title='LinkedIn profile')
                 span.fa.fa-2x.fa-linkedin
 
-              a(href=profiles.skype target='_blank' title='Skype profile')
+              a(href=profiles.skype itemprop='url' target='_blank' title='Skype profile')
                 span.fa.fa-2x.fa-skype
       
       //- Summary
-      section#summary
+      section#summary(itemprop='description')
         p=summary
 
       //- Skills
@@ -75,17 +78,22 @@ html(lang="en")
           section#job
 
             //- Title
-            h3=job.title
+            h3(itemprop='jobTitle')=job.title
 
-            ul.subheading
+            ul.subheading(itemscope itemprop='worksFor' itemtype='http://schema.org/Organization')
               //- Company
               if (job.company)
-                li.
-                  #[a(href=job.company.url target='_blank') #{job.company.name}]
+                li
+                  a(href=job.company.url target='_blank', itemprop='url')
+                    span(itemprop='name')=job.company.name
+                  meta(itemprop='telephone' content=job.company.telephone)
+              else
+                meta(itemprop='name' content=job.title)
+                meta(itemprop='telephone' content='')
 
               //- Location
               if (job.location)
-                li=job.location
+                li(itemprop='address')=job.location
               
               //- Time
               if (Array.isArray(job.time))
@@ -116,21 +124,22 @@ html(lang="en")
         each project in projects
 
           //- Project
-          section#project
+          section#project(itemscope itemtype='http://schema.org/CreativeWork')
 
             //- Title
-            h3=project.title
+            h3(itemprop='name')=project.title
+            meta(itemprop='author' content=name)
 
             //- URL
             if (project.url)
               ul.subheading
-                li.
-                  #[a(href=project.url target='_blank') #{project.url}]
+                li
+                  a(href=project.url target='_blank' itemprop='url')=project.url
 
             //- Description
             ul
               each item in project.descriptionItems
-                li=item
+                li(itemprop='description')=item
 
       //- Education
       section#education
@@ -138,15 +147,16 @@ html(lang="en")
 
         //- School
         each school in education
-          section#school
+          section#school(itemprop='alumniOf' itemscope itemtype='http://schema.org/CollegeOrUniversity')
 
             //- Title
             h3=school.title
+            meta(itemprop='telephone' content=school.telephone)
 
             //- Details
             ul.subheading
-              li=school.institute
-              li=school.location
+              li(itemprop='name')=school.institute
+              li(itemprop='address')=school.location
               li=school.type
               li
                 span=school.time.from

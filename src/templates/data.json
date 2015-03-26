@@ -2,6 +2,9 @@
 	"lastModified": "2015-03-26",
 
 	"name": "Tomáš Pažourek",
+	"givenName": "Tomáš",
+	"familyName": "Pažourek",
+
 	"title": "Software Engineer",
 
 	"personalDetails": {
@@ -65,7 +68,8 @@
 			"title": "Developer of intranet booking system",
 			"company": {
 				"name": "Y Soft Corporation, a.s.",
-				"url": "http://www.ysoft.com"
+				"url": "http://www.ysoft.com",
+				"telephone": "00420549240925"
 			},
 			"location": "Brno, Czech Republic",
 			"time": {
@@ -83,7 +87,8 @@
 			"title": "ASP.NET developer",
 			"company": {
 				"name": "Hano AS",
-				"url": "http://hano.no"
+				"url": "http://hano.no",
+				"telephone": "004766776673"
 			},
 			"location": "Billingstad, Norway",
 			"time": {
@@ -100,7 +105,8 @@
 			"title": ".NET developer",
 			"company": {
 				"name": "IReSoft, s.r.o.",
-				"url": "http://www.iresoft.cz"
+				"url": "http://www.iresoft.cz",
+				"telephone": "00420543213606"
 			},
 			"location": "Brno, Czech Republic",
 			"time": [
@@ -174,6 +180,7 @@
 			"institute": "Masaryk University, Faculty of Informatics",
 			"location": "Brno, Czech Republic",
 			"type": "Master's degree programme",
+			"telephone": "00420549491810",
 			"time": {
 				"from": "September 2012",
 				"to": "present"
@@ -187,6 +194,7 @@
 			"institute": "Eindhoven University of Technology, Department of Mathematics and Computer Science",
 			"location": "Eindhoven, Netherlands",
 			"type": "Master's degree programme",
+			"telephone": "0031402479111",
 			"time": {
 				"from": "September 2012",
 				"to": "February 2013"
@@ -200,6 +208,7 @@
 			"institute": "Masaryk University, Faculty of Informatics",
 			"location": "Brno, Czech Republic",
 			"type": "Bachelor's degree programme",
+			"telephone": "00420549491810",
 			"time": {
 				"from": "September 2009",
 				"to": "August 2012"
