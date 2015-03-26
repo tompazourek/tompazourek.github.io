@@ -10,4 +10,5 @@ Built using following libraries:
 - [Bootstrap](https://github.com/twbs/bootstrap) (customized, used for grids and CSS reset)
 - [Jade](https://github.com/jadejs/jade) (for templates)
 - [Bower](https://github.com/bower/bower) (for packages)
-- [Gulp](https://github.com/gulpjs/gulp) (as build system) 
+- [Gulp](https://github.com/gulpjs/gulp) (as build system)
+- [schema.org](http://schema.org/) (for semantics through Microdata) 
