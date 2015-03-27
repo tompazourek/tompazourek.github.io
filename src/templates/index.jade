@@ -38,19 +38,32 @@ html(lang="en")
             li#profileBadges
 
               a(href=profiles.github itemprop='url' target='_blank' title='GitHub profile')
-                span.fa.fa-2x.fa-github
+                span.fa.fa-2x.fa-github(aria-hidden='true')
+                span.sr-only GitHub profile
+
+              span.sr-only=', '
 
               a(href=profiles.stackOverflow itemprop='url' target='_blank' title='Stack Overflow profile')
-                span.fa.fa-2x.fa-stack-overflow
+                span.fa.fa-2x.fa-stack-overflow(aria-hidden='true')
+                span.sr-only Stack Overflow profile
+
+              span.sr-only=', '
 
               a(href=profiles.soundcloud itemprop='url' target='_blank' title='SoundCloud profile')
-                span.fa.fa-2x.fa-soundcloud
+                span.fa.fa-2x.fa-soundcloud(aria-hidden='true')
+                span.sr-only SoundCloud profile
+
+              span.sr-only=', '
 
               a(href=profiles.linkedIn itemprop='url' target='_blank' title='LinkedIn profile')
-                span.fa.fa-2x.fa-linkedin
+                span.fa.fa-2x.fa-linkedin(aria-hidden='true')
+                span.sr-only LinkedIn profile
+
+              span.sr-only=', '
 
               a(href=profiles.skype itemprop='url' target='_blank' title='Skype profile')
-                span.fa.fa-2x.fa-skype
+                span.fa.fa-2x.fa-skype(aria-hidden='true')
+                span.sr-only Skype profile
       
       //- Summary
       section#summary(itemprop='description')
@@ -95,6 +108,7 @@ html(lang="en")
                   meta(itemprop='telephone' content=job.company.telephone)
               else
                 li.sr-only
+                  =job.title
                   meta(itemprop='name' content=job.title)
                   meta(itemprop='telephone' content='')
 
