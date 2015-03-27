@@ -9,7 +9,7 @@ html(lang="en")
 
     link(rel='stylesheet', type='text/css', href='dist/styles/main.css')
   body
-    .container(itemscope id='cv' itemtype='http://schema.org/Person')
+    .container(itemscope itemtype='http://schema.org/Person')
 
       //- Header
       header.row
@@ -54,6 +54,7 @@ html(lang="en")
       
       //- Summary
       section#summary(itemprop='description')
+        h2.sr-only Summary
         p=summary
 
       //- Skills
@@ -64,7 +65,7 @@ html(lang="en")
           each skillGroup in skillGroups
 
             //- Skill group
-            section#skillGroup.col-lg-3.col-md-4.col-sm-6
+            .skillGroup.col-lg-3.col-md-4.col-sm-6
 
               //- Title
               h3=skillGroup.title
@@ -80,7 +81,7 @@ html(lang="en")
 
         each job in jobs
           //- Job
-          section#job
+          .job
 
             //- Title
             h3(itemprop='jobTitle')=job.title
@@ -93,8 +94,9 @@ html(lang="en")
                     span(itemprop='name')=job.company.name
                   meta(itemprop='telephone' content=job.company.telephone)
               else
-                meta(itemprop='name' content=job.title)
-                meta(itemprop='telephone' content='')
+                li.sr-only
+                  meta(itemprop='name' content=job.title)
+                  meta(itemprop='telephone' content='')
 
               //- Location
               if (job.location)
@@ -129,7 +131,7 @@ html(lang="en")
         each project in projects
 
           //- Project
-          section#project(itemscope itemtype='http://schema.org/CreativeWork')
+          .project(itemscope itemtype='http://schema.org/CreativeWork')
 
             //- Title
             h3(itemprop='name')=project.title
@@ -152,7 +154,7 @@ html(lang="en")
 
         //- School
         each school in education
-          section#school(itemprop='alumniOf' itemscope itemtype='http://schema.org/CollegeOrUniversity')
+          .school(itemprop='alumniOf' itemscope itemtype='http://schema.org/CollegeOrUniversity')
 
             //- Title
             h3=school.title
