@@ -1,9 +1,12 @@
 {
-	"lastModified": "2015-05-22",
+	"lastModified": "2015-06-01",
 
 	"name": "Tomáš Pažourek",
 	"givenName": "Tomáš",
 	"familyName": "Pažourek",
+
+	"metaKeywords": "Tomáš Pažourek, CV, personal page, programmer, programming, software engineer, developer",
+	"metaDescription": "I am a creative and ambicious software engineer from Czech Republic, this is my CV.",
 
 	"title": "Software Engineer",
 
