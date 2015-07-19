@@ -70,7 +70,25 @@
 
 	"jobs": [
 		{
-			"title": "Developer of intranet booking system",
+			"title": "Lead developer",
+			"company": {
+				"name": "Voracio Commerce Ltd.",
+				"url": "http://voraciocommerce.com",
+				"telephone": "00441484304545"
+			},
+			"location": "Huddersfield, United Kingdom",
+			"time": {
+				"from": "July 2015",
+				"to": "present"
+			},
+			"descriptionItems": [
+				"Responsible for architecture and design of new Voracio responsive eCommerce platform built on top of ASP.NET MVC",
+				"Full-stack implementation of individual application modules",
+				"Definition of development processes with regards to agile practices"
+			]
+		},
+		{
+			"title": "Developer of Intranet Booking System",
 			"company": {
 				"name": "Y Soft Corporation, a.s.",
 				"url": "http://www.ysoft.com",
@@ -89,7 +107,7 @@
 			]
 		},
 		{
-			"title": "ASP.NET developer",
+			"title": "ASP.NET Developer",
 			"company": {
 				"name": "Hano AS",
 				"url": "http://hano.no",
@@ -107,7 +125,7 @@
 			]
 		},
 		{
-			"title": ".NET developer",
+			"title": ".NET Developer",
 			"company": {
 				"name": "IReSoft, s.r.o.",
 				"url": "http://www.iresoft.cz",
@@ -133,7 +151,7 @@
 			]
 		},
 		{
-			"title": "Freelance web developer",
+			"title": "Freelance Web Developer",
 			"location": "Zlín, Czech Republic",
 			"time" : {
 				"from": "2007",
