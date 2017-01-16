@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/tompazourek
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://tompazourek.github.io
+  * I am tompazourek (https://keybase.io/tompazourek) on keybase.
+  * I have a public key with fingerprint F6E5 67B7 20F5 4377 4A7B  282D 7377 0A52 3E12 C1B8
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0101f20bde3b307a2ca48188f5fe98c7629c8c316dce976a94141f14ff5393d7c85f0a",
+            "fingerprint": "f6e567b720f543774a7b282d73770a523e12c1b8",
+            "host": "keybase.io",
+            "key_id": "73770a523e12c1b8",
+            "kid": "0101f20bde3b307a2ca48188f5fe98c7629c8c316dce976a94141f14ff5393d7c85f0a",
+            "uid": "28533b3def223199abce59d02d846a19",
+            "username": "tompazourek"
+        },
+        "service": {
+            "hostname": "tompazourek.github.io",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1484596023,
+    "expire_in": 157680000,
+    "prev": "f3c3701e983ef4afa469287126c307257bd1f00d698e706fa309f43898f82a0a",
+    "seqno": 6,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.62
+Comment: https://keybase.io/crypto
+
+yMInAnicrVJbSBVBGD6nLM2KLLqXJSuFwcl2Zi8ze6zErJcQQiMyMk6zuzPHTT17
+3F1PqUhiVwgq0XroISIjK6XAiNIeSpMCJaLSDF8yukgJvdRDIWizVk/12LzM7fu+
++f5v/t650wOpwYf1mzqLFx5eH+zvbqkKFNdlolpBt81qIVwrlNGpiZab1PUiZZYp
+hAURiIBBUTeppEsiItAgMgYYM4VRDRtIhZqBDQmopkE1pBJNBjJgQGZMkTTJRAZW
+mEiEkMCsWJQ6cceKeVyWqVRRkY6gyBRZQkgmSIcYmoivRaJAiQJoAB1zYqnt+gxu
+TicuzbZsfsY3kSl7/8D/Z99VU3IQKxIXMimDUAKaRnSDKpopQhPLKgGaD3SpEyMV
+lKM9uyJOauwqh5YJdSGBXyQsg/rZ+sX8DcqOWl5plf6rtrhje7Zhl3NIqefF3bAv
+4VXHfc5Bqkd+q0V0K2byTDkjQR3XsmNCGHCk4Vm+PJCxrGiqCKWQQA/FLYdGLB+h
+IBWLfPjv0IT/E5IhIRHwUCTKZMKIrGoQIwBVg+cGFaSbgImiqWqYIlFlRBI1JktY
+wwxDMhWRSytjthBWuU0S5ZKuFY0Rjxcm1PU8LEkKBFMDM2dM83stkDor7U8H1o8l
+T9akh/oG9s9cYB/5lnG9uy3zlHB5Q9aP3qa3A/NXpL/HJcdGi6bnJp6Ndn4u6C1s
+PJ2eRGefzOvJ2oyf37aTjJaRHStX1fddA91D2Wleckr+xhdPlL5dHX2h0T23Bt+E
+0euhy9Vg8bngrLMZj+D+K8GVl1DHmRPXm786F55/at3pOtVf8tZdVHfvbVh7Q528
+0drtZVy9uTBxoWj0WFPD8sKcro73i5pWF7T2n+/qz99XULKNbRl7fKBk+/jE8PBE
+/MOrynnvlj5t3uws6SqY+N577+Ydpx1uPfp0/M5kbUPHmo/LcnKVaMrWbQ2Le9pm
+tOvyYE7THJG+vXv8Qbg07/7LzJHGn0jnQPA=
+=7WMY
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/tompazourek
+
+==================================================================
