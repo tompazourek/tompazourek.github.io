@@ -1,5 +1,5 @@
 {
-	"lastModified": "2016-02-21",
+	"lastModified": "2018-03-03",
 
 	"name": "Tomáš Pažourek",
 	"givenName": "Tomáš",
@@ -18,8 +18,7 @@
 		"github": "https://github.com/tompazourek/",
 		"stackOverflow": "http://stackoverflow.com/users/108374/tomp",
 		"linkedIn": "http://cz.linkedin.com/in/tpazourek/en",
-		"skype": "skype:blizzy01?chat",
-		"soundcloud": "https://soundcloud.com/tom0p"
+		"skype": "skype:blizzy01?chat"
 	},
 
 	"summary": "I am creative software engineer from Czech Republic with extensive experience with development of applications for desktop, web and embedded devices. My current focus revolves mostly around web development, technologies surrounding .NET Framework, service science, and innovation in e-commerce.",
@@ -33,8 +32,9 @@
 				"Good knowledge of JavaScript and jQuery",
 				"SCSS, LESS, Jade, Bootstrap, Bower, Gulp",
 				"Responsive webdesign",
-				"Web development in PHP (Model-View-Presenter pattern), knowledge of Nette Framework",
-				"Web development in ASP.NET (both plain ASP.NET and MVC)"
+				"Managing IIS",
+				"Web development in ASP.NET (both plain ASP.NET and MVC)",
+				"Web development in PHP (Model-View-Presenter pattern), knowledge of Nette Framework"
 			]
 		},
 		{
@@ -43,16 +43,17 @@
 				"Good knowledge of C# and VB.NET",
 				"ASP.NET MVC, WCF, Windows Forms",
 				"NHibernate, Entity Framework",
-				"SimpleInjector, Automapper, StructureMap, DevExpress WinForms Controls, Resco Toolkit, .NET Compact Framework, NUnit, NuGet, ReSharper"
+				"SimpleInjector, AutoMapper, StructureMap, DevExpress WinForms Controls, Resco Toolkit, .NET Compact Framework, NUnit, NuGet, ReSharper"
 			]
 		},
 		{
 			"title": "Databases",
 			"items": [
 				"Good knowledge of SQL language",
+				"Managing Microsoft SQL Server",
 				"T-SQL scripting",
 				"ER diagramming",
-				"Experience with Microsoft SQL Server, MySQL, SQLite, Oracle RDBMS"
+				"Experience with MySQL, SQLite, Oracle RDBMS"
 			]
 		},
 		{
@@ -166,18 +167,28 @@
 	"projects": [
 		{
 			"title": "Colourful .NET",
-			"descriptionItems": [ "Hobby project, open-source library for working with color spaces" ],
+			"descriptionItems": [ "Open source .NET library for working with color spaces" ],
 			"url": "https://github.com/tompazourek/Colourful"
 		},
 		{
 			"title": "Endless .NET",
-			"descriptionItems": [ "Hobby project, open-source library that extends the C# functional paradigm, focuses mainly on infinite sequences" ],
+			"descriptionItems": [ "Extensions that support the C# functional paradigm" ],
 			"url": "https://github.com/tompazourek/Endless"
 		},
 		{
 			"title": "Rationals .NET",
-			"descriptionItems": [ "Implementation of arbitrary length and arbitrary precision rational number arithmetics for .NET framework" ],
+			"descriptionItems": [ "Implementation of rational number arithmetic for .NET with arbitrary precision" ],
 			"url": "https://github.com/tompazourek/Rationals"
+		},
+		{
+			"title": "RazorHtmlMinifier.Mvc5",
+			"descriptionItems": [ "Trivial compile-time Razor HTML Minifier for ASP.NET MVC 5" ],
+			"url": "https://github.com/tompazourek/RazorHtmlMinifier.Mvc5"
+		},
+		{
+			"title": "NaturalSort.Extension",
+			"descriptionItems": [ "Extension method for StringComparer that adds support for natural sorting (e.g. \"abc1\", \"abc2\", \"abc10\" instead of \"abc1\", \"abc10\", \"abc2\")" ],
+			"url": "https://github.com/tompazourek/NaturalSort.Extension"
 		},
 		{
 			"title": "intl-quotes",
