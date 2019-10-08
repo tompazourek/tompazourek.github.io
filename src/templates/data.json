@@ -65,14 +65,14 @@
 			"title": "Lead Platform Developer",
 			"company": {
 				"name": "Voracio Commerce Ltd.",
-				"url": "http://voraciocommerce.com",
+				"url": "https://www.voracio.co.uk",
 				"telephone": "00441484304545"
 			},
 			"location": "Huddersfield, United Kingdom",
 			"time": {
 				"from": "Jul 2015",
 				"to": "Dec 2019",
-				"duration": "4 years"
+				"duration": "4 years 6 months"
 			},
 			"descriptionItems": [
 				"Responsible for architecture and design of a new eCommerce platform",
@@ -88,10 +88,10 @@
 			"title": "Intranet Developer",
 			"company": {
 				"name": "Y Soft Corporation, a.s.",
-				"url": "http://www.ysoft.com",
+				"url": "https://www.ysoft.com",
 				"telephone": "00420549240925"
 			},
-			"location": "Czechia, Brno",
+			"location": "Brno, Czechia",
 			"time": {
 				"from": "Feb 2015",
 				"to": "Jun 2015",
@@ -108,13 +108,13 @@
 			"title": "Full Stack Developer",
 			"company": {
 				"name": "Hano AS",
-				"url": "http://hano.no",
+				"url": "https://hano.no",
 				"telephone": "004766776673"
 			},
-			"location": "Norway, Billingstad",
+			"location": "Billingstad, Norway",
 			"time": {
 				"from": "Feb 2014",
-				"to": "Feb 2015",
+				"to": "Jan 2015",
 				"duration": "1 year"
 			},
 			"descriptionItems": [
@@ -128,10 +128,10 @@
 			"title": ".NET Developer",
 			"company": {
 				"name": "IReSoft, s.r.o.",
-				"url": "http://www.iresoft.cz",
+				"url": "https://www.iresoft.cz",
 				"telephone": "00420543213606"
 			},
-			"location": "Czechia, Brno",
+			"location": "Brno, Czechia",
 			"time": {
 				"periods": [
 					{
@@ -143,7 +143,7 @@
 						"to": "Dec 2013"
 					}
 				],
-				"duration": "2 years"
+				"duration": "2 years 3 months"
 			},
 			"descriptionItems": [
 				"Development of enterprise information systems for several SMEs, SaaS model",
@@ -157,7 +157,7 @@
 			"company": {
 				"name": "Freelance"
 			},
-			"location": "Czechia, Zlín",
+			"location": "Zlín, Czechia",
 			"time": {
 				"from": "2007",
 				"to": "2011",
@@ -227,7 +227,7 @@
 				"Bachelor thesis",
 				"Available only in Czech language"
 			],
-			"url": "http://is.muni.cz/th/359464/fi_b"
+			"url": "https://is.muni.cz/th/359464/fi_b"
 		},
 		{
 			"title": "Booking System for Multifunctional Devices",
@@ -235,19 +235,20 @@
 			"descriptionItems": [
 				"Master thesis"
 			],
-			"url": "http://is.muni.cz/th/359464/fi_m"
+			"url": "https://is.muni.cz/th/359464/fi_m"
 		}
 	],
 	"education": [
 		{
 			"title": "Service Science, Management, and Engineering",
 			"institute": "Masaryk University, Faculty of Informatics",
-			"location": "Czechia, Brno",
+			"location": "Brno, Czechia",
 			"type": "Master's degree programme",
 			"telephone": "00420549491810",
 			"time": {
 				"from": "Sep 2012",
-				"to": "Feb 2016"
+				"to": "Feb 2016",
+				"duration": "3 years 5 months"
 			},
 			"descriptionItems": [
 				"Business aspects of IT, service economy, soft skills, team project leadership, software engineering, principles of large-scale information systems, management and marketing strategies"
@@ -256,12 +257,13 @@
 		{
 			"title": "Erasmus Scholarship",
 			"institute": "Eindhoven University of Technology, Department of Mathematics and Computer Science",
-			"location": "Netherlands, Eindhoven",
+			"location": "Eindhoven, Netherlands",
 			"type": "Master's degree programme",
 			"telephone": "0031402479111",
 			"time": {
 				"from": "Sep 2012",
-				"to": "Feb 2013"
+				"to": "Feb 2013",
+				"duration": "6 months"
 			},
 			"descriptionItems": [
 				"Data mining, information retrieval, automated reasoning, machine learning, web information systems and computer security"
@@ -270,12 +272,13 @@
 		{
 			"title": "Computer Systems and Data Processing",
 			"institute": "Masaryk University, Faculty of Informatics",
-			"location": "Czechia, Brno",
+			"location": "Brno, Czechia",
 			"type": "Bachelor's degree programme",
 			"telephone": "00420549491810",
 			"time": {
 				"from": "Sep 2009",
-				"to": "Aug 2012"
+				"to": "Aug 2012",
+				"duration": "3 years"
 			},
 			"descriptionItems": [
 				"Theoretical CS, programming languages and paradigms, basics of software engineering, computer security, database modelling, analysis and design of computer systems"

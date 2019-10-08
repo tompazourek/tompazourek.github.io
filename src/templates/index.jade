@@ -159,6 +159,36 @@ html(lang="en")
               each item in job.descriptionItems
                 li=item
 
+      //- Education
+      section#education
+        h2 Education
+
+        //- School
+        each school in education
+          .school(itemprop='alumniOf' itemscope itemtype='http://schema.org/CollegeOrUniversity')
+
+            //- Title
+            h3=school.title
+            meta(itemprop='telephone' content=school.telephone)
+
+            //- Details
+            ul.subheading
+              li(itemprop='name')=school.institute
+              li(itemprop='address')=school.location
+              li=school.type
+              li
+                span=school.time.duration
+                span  (
+                span=school.time.from
+                span &ndash;
+                span=school.time.to
+                span )
+
+            //- Description
+            ul
+              each item in school.descriptionItems
+                li=item
+
       //- Projects & publications
       section#projects
         h2 Projects &amp; publications
@@ -182,33 +212,6 @@ html(lang="en")
             ul
               each item in project.descriptionItems
                 li(itemprop='description')=item
-
-      //- Education
-      section#education
-        h2 Education
-
-        //- School
-        each school in education
-          .school(itemprop='alumniOf' itemscope itemtype='http://schema.org/CollegeOrUniversity')
-
-            //- Title
-            h3=school.title
-            meta(itemprop='telephone' content=school.telephone)
-
-            //- Details
-            ul.subheading
-              li(itemprop='name')=school.institute
-              li(itemprop='address')=school.location
-              li=school.type
-              li
-                span=school.time.from
-                span &ndash;
-                span=school.time.to
-
-            //- Description
-            ul
-              each item in school.descriptionItems
-                li=item
 
       //- Footer
       footer
