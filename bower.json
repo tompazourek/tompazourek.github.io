@@ -2,8 +2,8 @@
   "name": "CV",
   "private": true,
   "dependencies": {
-    "bootstrap": "~3.3.4",
-    "source-sans-pro": "release",
+    "bootstrap": "~3.3.7",
+    "source-sans-pro": "git://github.com/adobe-fonts/source-sans-pro.git#release",
     "font-awesome": "~4.3.0"
   },
   "overrides": {
@@ -23,5 +23,8 @@
         "less/**/*.less"
       ]
     }
+  },
+  "resolutions": {
+    "source-sans-pro": "release"
   }
 }

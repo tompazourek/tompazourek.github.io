@@ -1,7 +1,7 @@
 doctype html
 html(lang="en")
   head
-    title=name
+    title #{name} &dash; #{title}
 
     meta(charset='utf-8')
     meta(name='viewport' content='width=device-width, initial-scale=1')
@@ -63,12 +63,6 @@ html(lang="en")
 
               span.sr-only=', '
 
-              a(href=profiles.soundcloud itemprop='url' target='_blank' title='SoundCloud profile')
-                span.fa.fa-2x.fa-soundcloud(aria-hidden='true')
-                span.sr-only SoundCloud profile
-
-              span.sr-only=', '
-
               a(href=profiles.linkedIn itemprop='url' target='_blank' title='LinkedIn profile')
                 span.fa.fa-2x.fa-linkedin(aria-hidden='true')
                 span.sr-only LinkedIn profile
@@ -84,15 +78,15 @@ html(lang="en")
         h2.sr-only Summary
         p=summary
 
-      //- Skills
+      //- Skills and interests
       section#skillGroups
-        h2 Skills
+        h2 Skills &amp; interests
 
         .row
           each skillGroup in skillGroups
 
             //- Skill group
-            .skillGroup.col-lg-3.col-md-4.col-sm-6
+            .skillGroup.col-sm-6
 
               //- Title
               h3=skillGroup.title
@@ -117,9 +111,14 @@ html(lang="en")
               //- Company
               if (job.company)
                 li
-                  a(href=job.company.url target='_blank', itemprop='url')
+                  if (job.company.url)
+                    a(href=job.company.url target='_blank', itemprop='url')
+                      span(itemprop='name')=job.company.name
+                  else
                     span(itemprop='name')=job.company.name
-                  meta(itemprop='telephone' content=job.company.telephone)
+
+                  if (job.company.telephone)
+                    meta(itemprop='telephone' content=job.company.telephone)
               else
                 li.sr-only
                   =job.title
@@ -129,23 +128,31 @@ html(lang="en")
               //- Location
               if (job.location)
                 li(itemprop='address')=job.location
+
               
               //- Time
-              if (Array.isArray(job.time))
-
-                //- List of times
-                each time in job.time
-                  li
-                    span=time.from
+              if (Array.isArray(job.time.periods))
+                li
+                  span=job.time.duration
+                  //- List of times
+                  span  (
+                  each period, index in job.time.periods
+                    if (index > 0)
+                      span , 
+                    span=period.from
                     span &ndash;
-                    span=time.to
+                    span=period.to
+                  span )
               else
 
                 //- Single time
                 li
+                  span=job.time.duration
+                  span  (
                   span=job.time.from
                   span &ndash;
                   span=job.time.to
+                  span )
 
             //- Description
             ul

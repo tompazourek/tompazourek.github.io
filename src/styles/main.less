@@ -22,6 +22,13 @@ ul {
 a {
   text-decoration: none;
   border-bottom: 2px solid @gray-light;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
   &:hover {
     border-bottom-color: @link-color;
   }
@@ -125,8 +132,7 @@ header {
 
 // Details about a section
 .subheading {
-  font-size: @font-size-small;
-  margin: -@baseline 0 -.5*@baseline 0;
+  margin: -.75*@baseline 0 -.5*@baseline 0;
   color: @gray;
   list-style: none;
 
