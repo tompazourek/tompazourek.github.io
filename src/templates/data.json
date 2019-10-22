@@ -1,5 +1,5 @@
 {
-	"lastModified": "2019-10-08",
+	"lastModified": "2019-10-22",
 	"name": "Tomáš Pažourek",
 	"givenName": "Tomáš",
 	"familyName": "Pažourek",
@@ -198,6 +198,13 @@
 				"Extension method for StringComparer that adds support for natural sorting (e.g. \"abc1\", \"abc2\", \"abc10\" instead of \"abc1\", \"abc10\", \"abc2\")"
 			],
 			"url": "https://github.com/tompazourek/NaturalSort.Extension"
+		},
+		{
+			"title": "Feedpipes .NET",
+			"descriptionItems": [
+				"Open source .NET library for parsing and serializing RSS, Atom, and JSON feeds"
+			],
+			"url": "https://github.com/tompazourek/Feedpipes"
 		},
 		{
 			"title": "Endless .NET",
