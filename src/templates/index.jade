@@ -133,26 +133,40 @@ html(lang="en")
               //- Time
               if (Array.isArray(job.time.periods))
                 li
-                  span=job.time.duration
-                  //- List of times
-                  span  (
-                  each period, index in job.time.periods
-                    if (index > 0)
-                      span , 
-                    span=period.from
-                    span &ndash;
-                    span=period.to
-                  span )
+                  if (job.time.duration)
+                    span=job.time.duration
+                    //- List of times
+                    span  (
+                    each period, index in job.time.periods
+                      if (index > 0)
+                        span , 
+                      span=period.from
+                      span &ndash;
+                      span=period.to
+                    span )
+                  else
+                    //- List of times
+                    each period, index in job.time.periods
+                      if (index > 0)
+                        span , 
+                      span=period.from
+                      span &ndash;
+                      span=period.to
               else
 
                 //- Single time
                 li
-                  span=job.time.duration
-                  span  (
-                  span=job.time.from
-                  span &ndash;
-                  span=job.time.to
-                  span )
+                  if (job.time.duration)
+                    span=job.time.duration
+                    span  (
+                    span=job.time.from
+                    span &ndash;
+                    span=job.time.to
+                    span )
+                  else
+                    span=job.time.from
+                    span &ndash;
+                    span=job.time.to
 
             //- Description
             ul

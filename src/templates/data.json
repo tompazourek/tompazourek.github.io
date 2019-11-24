@@ -1,295 +1,312 @@
 {
-	"lastModified": "2019-10-22",
-	"name": "Tomáš Pažourek",
-	"givenName": "Tomáš",
-	"familyName": "Pažourek",
-	"metaKeywords": "Tomáš Pažourek, CV, personal page, programmer, programming, software engineer, developer",
-	"metaDescription": "I am a software engineer from Czechia with extensive experience with a diverse range of software projects. This is my CV.",
-	"title": "Software Engineer",
-	"personalDetails": {
-		"email": "tom.pazourek@gmail.com"
-	},
-	"profiles": {
-		"github": "https://github.com/tompazourek/",
-		"stackOverflow": "https://stackoverflow.com/users/108374/tom-pa%c5%beourek",
-		"linkedIn": "https://www.linkedin.com/in/tompazourek/?locale=en_US",
-		"skype": "skype:blizzy01?chat"
-	},
-	"summary": "I am a software engineer from Czechia with extensive experience with a diverse range of software projects. My current focus revolves around software architecture, the .NET ecosystem, and innovation in web application systems.",
-	"skillGroups": [
-		{
-			"title": "Frontend",
-			"items": [
-				"Design of large-scale applications with HTML/CSS/SASS/LESS",
-				"Experience with theming, customization, extensibility",
-				"UX on touch-based interfaces, embedded devices, responsive web design",
-				"Vanilla JavaScript, jQuery, experience with SPA-based apps, client-side performance optimization",
-				"Adobe Photoshop"
-			]
-		},
-		{
-			"title": "Backend",
-			"items": [
-				".NET ecosystem, C# programming",
-				"Active in the open-source community as a maintainer and a contributor",
-				"Microsoft SQL Server, database design, query performance tuning",
-				"ORMs, Dapper, Entity Framework, NHibernate",
-				"API design, WS (SOAP, REST), system integration",
-				"System architecture, testability, SOLID principles, IoC",
-				"Cybersecurity"
-			]
-		},
-		{
-			"title": "DevOps",
-			"items": [
-				"Source code management, Git, SVN",
-				"Build and workflow automation, PowerShell, Cake, AppVeyor, Gulp, LiveReload",
-				"Automated testing, xUnit, NUnit",
-				"Microsoft Azure infrastructure",
-				"Administration & maintenance of IIS web servers, Windows VMs, Microsoft SQL Server VMs",
-				"Application and server monitoring"
-			]
-		},
-		{
-			"title": "Leadership",
-			"items": [
-			"Agile methodologies (people over process, Kanban)",
-				"Hiring processes, employee onboarding and mentoring",
-				"Definition of development life cycle processes",
-				"Knowledge-base and documentation management"
-			]
-		}
-	],
-	"jobs": [
-		{
-			"title": "Lead Platform Developer",
-			"company": {
-				"name": "Voracio Commerce Ltd.",
-				"url": "https://www.voracio.co.uk",
-				"telephone": "00441484304545"
-			},
-			"location": "Huddersfield, United Kingdom",
-			"time": {
-				"from": "Jul 2015",
-				"to": "Dec 2019",
-				"duration": "4 years 6 months"
-			},
-			"descriptionItems": [
-				"Responsible for architecture and design of a new eCommerce platform",
-		"As a solo developer, responsible for all parts of the process from the inception (greenfield project) to production and operation",
-		"Built on top of Microsoft stack (.NET, SQL Server, Azure)",
-		"Definition of development processes with regards to modern practices",
-		"Maintenance of legacy systems in Classic ASP and challenges of migration to modern systems",
-		"Technical leadership, part of a growing company (started as a 2-person company, nowadays 5 employees)",
-		"Working full-time remote for the whole period, experienced with the challenges of telecommuting"
-			]
-		},
-		{
-			"title": "Intranet Developer",
-			"company": {
-				"name": "Y Soft Corporation, a.s.",
-				"url": "https://www.ysoft.com",
-				"telephone": "00420549240925"
-			},
-			"location": "Brno, Czechia",
-			"time": {
-				"from": "Feb 2015",
-				"to": "Jun 2015",
-				"duration": "5 months"
-			},
-			"descriptionItems": [
-				"Implementation of web-based IS for booking and management of devices inside the company",
-				"Development in ASP.NET MVC, Entity Framework Code First, UI designed using LESS and customized Bootstrap",
-				"Responsible for the entire software development process (analysis, UI design, data modelling, programming, deployment) of the project",
-				"Mobile-first approach to UI design"
-			]
-		},
-		{
-			"title": "Full Stack Developer",
-			"company": {
-				"name": "Hano AS",
-				"url": "https://hano.no",
-				"telephone": "004766776673"
-			},
-			"location": "Billingstad, Norway",
-			"time": {
-				"from": "Feb 2014",
-				"to": "Jan 2015",
-				"duration": "1 year"
-			},
-			"descriptionItems": [
-				"Projects related to web-based booking systems, electronic point of sale, payment solutions",
-				"Experience with heavy-client web applications",
-				"Development in ASP.NET MVC, plain ASP.NET, C# and VB.NET, Entity Framework, MSSQL Server (T-SQL stored procedures), HTML5, JavaScript, jQuery, AngularJS, WebSockets, CSS, Bootstrap, jQuery UI",
-				"Work on touch-based user interfaces"
-			]
-		},
-		{
-			"title": ".NET Developer",
-			"company": {
-				"name": "IReSoft, s.r.o.",
-				"url": "https://www.iresoft.cz",
-				"telephone": "00420543213606"
-			},
-			"location": "Brno, Czechia",
-			"time": {
-				"periods": [
-					{
-						"from": "Jul 2011",
-						"to": "Aug 2012"
-					},
-					{
-						"from": "Feb 2013",
-						"to": "Dec 2013"
-					}
-				],
-				"duration": "2 years 3 months"
-			},
-			"descriptionItems": [
-				"Development of enterprise information systems for several SMEs, SaaS model",
-				"Focus on API design, WS development (REST, SOAP, XML-RPC), interoperability with other systems",
-				"C#, DevExpress, Windows Forms, WCF",
-				"Worked independently on several applications for Windows CE for embedded devices (.NET Compact Framework, Resco Toolkit)"
-			]
-		},
-		{
-			"title": "Web Developer",
-			"company": {
-				"name": "Freelance"
-			},
-			"location": "Zlín, Czechia",
-			"time": {
-				"from": "2007",
-				"to": "2011",
-				"duration": "4 years"
-			},
-			"descriptionItems": [
-				"Development of small MVP web applications in Nette Framework on PHP platform",
-				"Custom content-management systems and intranet applications for small businesses (travel agency, realty agency, car sales, web presentations)",
-				"Responsible single-handedly for the whole software development process (analysis, UI design in Photoshop, coding in HTML/CSS, data modelling, programming, deployment, communication with the customer)"
-			]
-		}
-	],
-	"projects": [
-		{
-			"title": "Colourful .NET",
-			"descriptionItems": [
-				"Open-source .NET library for working with color spaces"
-			],
-			"url": "https://github.com/tompazourek/Colourful"
-		},
-		{
-			"title": "Rationals .NET",
-			"descriptionItems": [
-				"Implementation of rational number arithmetic for .NET with arbitrary precision"
-			],
-			"url": "https://github.com/tompazourek/Rationals"
-		},
-		{
-			"title": "RazorHtmlMinifier.Mvc5",
-			"descriptionItems": [
-				"Trivial compile-time Razor HTML Minifier for ASP.NET MVC 5"
-			],
-			"url": "https://github.com/tompazourek/RazorHtmlMinifier.Mvc5"
-		},
-		{
-			"title": "NaturalSort.Extension",
-			"descriptionItems": [
-				"Extension method for StringComparer that adds support for natural sorting (e.g. \"abc1\", \"abc2\", \"abc10\" instead of \"abc1\", \"abc10\", \"abc2\")"
-			],
-			"url": "https://github.com/tompazourek/NaturalSort.Extension"
-		},
-		{
-			"title": "Feedpipes .NET",
-			"descriptionItems": [
-				"Open source .NET library for parsing and serializing RSS, Atom, and JSON feeds"
-			],
-			"url": "https://github.com/tompazourek/Feedpipes"
-		},
-		{
-			"title": "Endless .NET",
-			"descriptionItems": [
-				"Extensions that support the C# functional paradigm"
-			],
-			"url": "https://github.com/tompazourek/Endless"
-		},
-		{
-			"title": "intl-quotes",
-			"descriptionItems": [
-				"Small Bower package that ensures typographically correct quotation marks in various languages"
-			],
-			"url": "https://github.com/tompazourek/intl-quotes"
-		},
-		{
-			"title": "tompazourek.github.io",
-			"descriptionItems": [
-				"This personal page (CV) open-sourced"
-			],
-			"url": "https://github.com/tompazourek/tompazourek.github.io"
-		},
-		{
-			"title": "Web services using REST architecture on .NET platform",
-			"date": "2012",
-			"descriptionItems": [
-				"Bachelor thesis",
-				"Available only in Czech language"
-			],
-			"url": "https://is.muni.cz/th/359464/fi_b"
-		},
-		{
-			"title": "Booking System for Multifunctional Devices",
-			"date": "2016",
-			"descriptionItems": [
-				"Master thesis"
-			],
-			"url": "https://is.muni.cz/th/359464/fi_m"
-		}
-	],
-	"education": [
-		{
-			"title": "Service Science, Management, and Engineering",
-			"institute": "Masaryk University, Faculty of Informatics",
-			"location": "Brno, Czechia",
-			"type": "Master's degree",
-			"telephone": "00420549491810",
-			"time": {
-				"from": "Sep 2012",
-				"to": "Feb 2016",
-				"duration": "3 years 5 months"
-			},
-			"descriptionItems": [
-				"Business aspects of IT, service economy, soft skills, team project leadership, software engineering, principles of large-scale information systems, management and marketing strategies"
-			]
-		},
-		{
-			"title": "Erasmus Scholarship",
-			"institute": "Eindhoven University of Technology, Department of Mathematics and Computer Science",
-			"location": "Eindhoven, Netherlands",
-			"type": "Master's degree exchange programme",
-			"telephone": "0031402479111",
-			"time": {
-				"from": "Sep 2012",
-				"to": "Feb 2013",
-				"duration": "6 months"
-			},
-			"descriptionItems": [
-				"Data mining, information retrieval, automated reasoning, machine learning, web information systems and computer security"
-			]
-		},
-		{
-			"title": "Computer Systems and Data Processing",
-			"institute": "Masaryk University, Faculty of Informatics",
-			"location": "Brno, Czechia",
-			"type": "Bachelor's degree",
-			"telephone": "00420549491810",
-			"time": {
-				"from": "Sep 2009",
-				"to": "Aug 2012",
-				"duration": "3 years"
-			},
-			"descriptionItems": [
-				"Theoretical CS, programming languages and paradigms, basics of software engineering, computer security, database modelling, analysis and design of computer systems"
-			]
-		}
-	]
+    "education": [
+        {
+            "descriptionItems": [
+                "Business aspects of IT, service economy, soft skills, team project leadership, software engineering, principles of large-scale information systems, management and marketing strategies"
+            ],
+            "institute": "Masaryk University, Faculty of Informatics",
+            "location": "Brno, Czechia",
+            "telephone": "00420549491810",
+            "time": {
+                "duration": "3 years 5 months",
+                "from": "Sep 2012",
+                "to": "Feb 2016"
+            },
+            "title": "Service Science, Management, and Engineering",
+            "type": "Master's degree"
+        },
+        {
+            "descriptionItems": [
+                "Data mining, information retrieval, automated reasoning, machine learning, web information systems and computer security"
+            ],
+            "institute": "Eindhoven University of Technology, Department of Mathematics and Computer Science",
+            "location": "Eindhoven, Netherlands",
+            "telephone": "0031402479111",
+            "time": {
+                "duration": "6 months",
+                "from": "Sep 2012",
+                "to": "Feb 2013"
+            },
+            "title": "Erasmus Scholarship",
+            "type": "Master's degree exchange programme"
+        },
+        {
+            "descriptionItems": [
+                "Theoretical CS, programming languages and paradigms, basics of software engineering, computer security, database modelling, analysis and design of computer systems"
+            ],
+            "institute": "Masaryk University, Faculty of Informatics",
+            "location": "Brno, Czechia",
+            "telephone": "00420549491810",
+            "time": {
+                "duration": "3 years",
+                "from": "Sep 2009",
+                "to": "Aug 2012"
+            },
+            "title": "Computer Systems and Data Processing",
+            "type": "Bachelor's degree"
+        }
+    ],
+    "familyName": "Pažourek",
+    "givenName": "Tomáš",
+    "jobs": [
+        {
+            "company": {
+                "name": "Oriflame Software, s.r.o.",
+                "telephone": "00420727883252",
+                "url": "https://oriflame.com/"
+            },
+            "descriptionItems": [
+                "Responsible for improvements of the core platform components",
+                "Modernization of the technology stack and associated development processes"
+            ],
+            "location": "Brno, Czechia",
+            "time": {
+                "from": "Nov 2019",
+                "to": "now"
+            },
+            "title": "Platform Architect"
+        },
+        {
+            "company": {
+                "name": "Voracio Commerce Ltd.",
+                "telephone": "00441484304545",
+                "url": "https://www.voracio.co.uk"
+            },
+            "descriptionItems": [
+                "Responsible for architecture and design of a new eCommerce platform",
+                "As a solo developer, responsible for all parts of the process from the inception (greenfield project) to production and operation",
+                "Built on top of Microsoft stack (.NET, SQL Server, Azure)",
+                "Definition of development processes with regards to modern practices",
+                "Maintenance of legacy systems in Classic ASP and challenges of migration to modern systems",
+                "Technical leadership, part of a growing company (started as a 2-person company, nowadays 5 employees)",
+                "Working full-time remote for the whole period, experienced with the challenges of telecommuting"
+            ],
+            "location": "Huddersfield, United Kingdom",
+            "time": {
+                "duration": "4 years 6 months",
+                "from": "Jul 2015",
+                "to": "Dec 2019"
+            },
+            "title": "Lead Platform Developer"
+        },
+        {
+            "company": {
+                "name": "Y Soft Corporation, a.s.",
+                "telephone": "00420549240925",
+                "url": "https://www.ysoft.com"
+            },
+            "descriptionItems": [
+                "Implementation of web-based IS for booking and management of devices inside the company",
+                "Development in ASP.NET MVC, Entity Framework Code First, UI designed using LESS and customized Bootstrap",
+                "Responsible for the entire software development process (analysis, UI design, data modelling, programming, deployment) of the project",
+                "Mobile-first approach to UI design"
+            ],
+            "location": "Brno, Czechia",
+            "time": {
+                "duration": "5 months",
+                "from": "Feb 2015",
+                "to": "Jun 2015"
+            },
+            "title": "Intranet Developer"
+        },
+        {
+            "company": {
+                "name": "Hano AS",
+                "telephone": "004766776673",
+                "url": "https://hano.no"
+            },
+            "descriptionItems": [
+                "Projects related to web-based booking systems, electronic point of sale, payment solutions",
+                "Experience with heavy-client web applications",
+                "Development in ASP.NET MVC, plain ASP.NET, C# and VB.NET, Entity Framework, MSSQL Server (T-SQL stored procedures), HTML5, JavaScript, jQuery, AngularJS, WebSockets, CSS, Bootstrap, jQuery UI",
+                "Work on touch-based user interfaces"
+            ],
+            "location": "Billingstad, Norway",
+            "time": {
+                "duration": "1 year",
+                "from": "Feb 2014",
+                "to": "Jan 2015"
+            },
+            "title": "Full Stack Developer"
+        },
+        {
+            "company": {
+                "name": "IReSoft, s.r.o.",
+                "telephone": "00420543213606",
+                "url": "https://www.iresoft.cz"
+            },
+            "descriptionItems": [
+                "Development of enterprise information systems for several SMEs, SaaS model",
+                "Focus on API design, WS development (REST, SOAP, XML-RPC), interoperability with other systems",
+                "C#, DevExpress, Windows Forms, WCF",
+                "Worked independently on several applications for Windows CE for embedded devices (.NET Compact Framework, Resco Toolkit)"
+            ],
+            "location": "Brno, Czechia",
+            "time": {
+                "duration": "2 years 3 months",
+                "periods": [
+                    {
+                        "from": "Jul 2011",
+                        "to": "Aug 2012"
+                    },
+                    {
+                        "from": "Feb 2013",
+                        "to": "Dec 2013"
+                    }
+                ]
+            },
+            "title": ".NET Developer"
+        },
+        {
+            "company": {
+                "name": "Freelance"
+            },
+            "descriptionItems": [
+                "Development of small MVP web applications in Nette Framework on PHP platform",
+                "Custom content-management systems and intranet applications for small businesses (travel agency, realty agency, car sales, web presentations)",
+                "Responsible single-handedly for the whole software development process (analysis, UI design in Photoshop, coding in HTML/CSS, data modelling, programming, deployment, communication with the customer)"
+            ],
+            "location": "Zlín, Czechia",
+            "time": {
+                "duration": "4 years",
+                "from": "2007",
+                "to": "2011"
+            },
+            "title": "Web Developer"
+        }
+    ],
+    "lastModified": "2019-10-22",
+    "metaDescription": "I am a software engineer from Czechia with extensive experience with a diverse range of software projects. This is my CV.",
+    "metaKeywords": "Tomáš Pažourek, CV, personal page, programmer, programming, software engineer, developer",
+    "name": "Tomáš Pažourek",
+    "personalDetails": {
+        "email": "tom.pazourek@gmail.com"
+    },
+    "profiles": {
+        "github": "https://github.com/tompazourek/",
+        "linkedIn": "https://www.linkedin.com/in/tompazourek/?locale=en_US",
+        "skype": "skype:blizzy01?chat",
+        "stackOverflow": "https://stackoverflow.com/users/108374/tom-pa%c5%beourek"
+    },
+    "projects": [
+        {
+            "descriptionItems": [
+                "Open-source .NET library for working with color spaces"
+            ],
+            "title": "Colourful .NET",
+            "url": "https://github.com/tompazourek/Colourful"
+        },
+        {
+            "descriptionItems": [
+                "Implementation of rational number arithmetic for .NET with arbitrary precision"
+            ],
+            "title": "Rationals .NET",
+            "url": "https://github.com/tompazourek/Rationals"
+        },
+        {
+            "descriptionItems": [
+                "Trivial compile-time Razor HTML Minifier for ASP.NET MVC 5"
+            ],
+            "title": "RazorHtmlMinifier.Mvc5",
+            "url": "https://github.com/tompazourek/RazorHtmlMinifier.Mvc5"
+        },
+        {
+            "descriptionItems": [
+                "Extension method for StringComparer that adds support for natural sorting (e.g. \"abc1\", \"abc2\", \"abc10\" instead of \"abc1\", \"abc10\", \"abc2\")"
+            ],
+            "title": "NaturalSort.Extension",
+            "url": "https://github.com/tompazourek/NaturalSort.Extension"
+        },
+        {
+            "descriptionItems": [
+                "Open source .NET library for parsing and serializing RSS, Atom, and JSON feeds"
+            ],
+            "title": "Feedpipes .NET",
+            "url": "https://github.com/tompazourek/Feedpipes"
+        },
+        {
+            "descriptionItems": [
+                "Extensions that support the C# functional paradigm"
+            ],
+            "title": "Endless .NET",
+            "url": "https://github.com/tompazourek/Endless"
+        },
+        {
+            "descriptionItems": [
+                "Small Bower package that ensures typographically correct quotation marks in various languages"
+            ],
+            "title": "intl-quotes",
+            "url": "https://github.com/tompazourek/intl-quotes"
+        },
+        {
+            "descriptionItems": [
+                "This personal page (CV) open-sourced"
+            ],
+            "title": "tompazourek.github.io",
+            "url": "https://github.com/tompazourek/tompazourek.github.io"
+        },
+        {
+            "date": "2012",
+            "descriptionItems": [
+                "Bachelor thesis",
+                "Available only in Czech language"
+            ],
+            "title": "Web services using REST architecture on .NET platform",
+            "url": "https://is.muni.cz/th/359464/fi_b"
+        },
+        {
+            "date": "2016",
+            "descriptionItems": [
+                "Master thesis"
+            ],
+            "title": "Booking System for Multifunctional Devices",
+            "url": "https://is.muni.cz/th/359464/fi_m"
+        }
+    ],
+    "skillGroups": [
+        {
+            "items": [
+                "Design of large-scale applications with HTML/CSS/SASS/LESS",
+                "Experience with theming, customization, extensibility",
+                "UX on touch-based interfaces, embedded devices, responsive web design",
+                "Vanilla JavaScript, jQuery, experience with SPA-based apps, client-side performance optimization",
+                "Adobe Photoshop"
+            ],
+            "title": "Frontend"
+        },
+        {
+            "items": [
+                ".NET ecosystem, C# programming",
+                "Active in the open-source community as a maintainer and a contributor",
+                "Microsoft SQL Server, database design, query performance tuning",
+                "ORMs, Dapper, Entity Framework, NHibernate",
+                "API design, WS (SOAP, REST), system integration",
+                "System architecture, testability, SOLID principles, IoC",
+                "Cybersecurity"
+            ],
+            "title": "Backend"
+        },
+        {
+            "items": [
+                "Source code management, Git, SVN",
+                "Build and workflow automation, PowerShell, Cake, AppVeyor, Gulp, LiveReload",
+                "Automated testing, xUnit, NUnit",
+                "Microsoft Azure infrastructure",
+                "Administration & maintenance of IIS web servers, Windows VMs, Microsoft SQL Server VMs",
+                "Application and server monitoring"
+            ],
+            "title": "DevOps"
+        },
+        {
+            "items": [
+                "Agile methodologies (people over process, Kanban)",
+                "Hiring processes, employee onboarding and mentoring",
+                "Definition of development life cycle processes",
+                "Knowledge-base and documentation management"
+            ],
+            "title": "Leadership"
+        }
+    ],
+    "summary": "I am a software engineer from Czechia with extensive experience with a diverse range of software projects. My current focus revolves around software architecture, the .NET ecosystem, and innovation in web application systems.",
+    "title": "Software Engineer"
 }
