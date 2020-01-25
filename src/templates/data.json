@@ -56,8 +56,10 @@
                 "url": "https://oriflame.com/"
             },
             "descriptionItems": [
-                "Responsible for improvements of the core platform components",
-                "Modernization of the technology stack and associated development processes"
+                "Continuous improvement of local development experience (performance, automation, tooling, builds)",
+                "Design and implementation of processes associated with version control, CI and CD",
+                "Performance optimization and modularization of core platform components",
+                "Support for other development teams regarding local builds, environments, tooling, code reviews"
             ],
             "location": "Brno, Czechia",
             "time": {
