@@ -57,16 +57,17 @@
             },
             "descriptionItems": [
                 "Improvements in local development experience (performance, automation, tooling, builds)",
-                "Design and implementation of processes associated with version control, CI and CD",
+                "Design and implementation of processes associated with version control, code analysis, CI and CD",
                 "Performance optimization and modularization of core platform components",
-                "Support for other development teams regarding local builds, environments, tooling, code reviews"
+                "Consultation around software architecture and design practices",
+                "Support other development teams regarding local builds, environments, tooling, code reviews"
             ],
             "location": "Brno, Czechia",
             "time": {
                 "from": "Nov 2019",
                 "to": "now"
             },
-            "title": "Independent Contractor"
+            "title": "External Consultant"
         },
         {
             "company": {

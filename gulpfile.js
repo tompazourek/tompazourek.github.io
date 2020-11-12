@@ -46,18 +46,23 @@ var paths = {
 
 var plumberOptions = { errorHandler: notify.onError('<%= error.message %>') };
 
-// copy some files from 'bower_components'
-gulp.task('main-bower-files', ['clean-main-bower-files'], function() {
-    return gulp.src(mainBowerFiles(), { base: paths.mainBowerComponentsSrc })
-        .pipe(gulp.dest(paths.mainBowerComponentsDest));
-});
 gulp.task('clean-main-bower-files', function() {
-    return gulp.src(paths.mainBowerComponentsDest)
+    return gulp.src(paths.mainBowerComponentsDest, { allowEmpty: true })
         .pipe(vinylPaths(del));
 });
 
+// copy some files from 'bower_components'
+gulp.task('main-bower-files', gulp.series('clean-main-bower-files', function() {
+    return gulp.src(mainBowerFiles(), { base: paths.mainBowerComponentsSrc })
+        .pipe(gulp.dest(paths.mainBowerComponentsDest));
+}));
+
 // compile LESS to CSS
-gulp.task('less-dev', ['clean-less', 'main-bower-files'], function() {
+gulp.task('clean-less', function() {
+    return gulp.src(paths.lessClean, { allowEmpty: true })
+        .pipe(vinylPaths(del));
+});
+gulp.task('less-dev', gulp.series('clean-less', 'main-bower-files', function() {
     return gulp.src(paths.lessSrc)
         .pipe(plumber(plumberOptions))
         .pipe(sourcemaps.init())
@@ -65,7 +70,7 @@ gulp.task('less-dev', ['clean-less', 'main-bower-files'], function() {
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest(paths.lessDest))
         .pipe(livereload());
-});
+}));
 gulp.task('less-dev-fast', function() {
     return gulp.src(paths.lessSrc)
         .pipe(plumber(plumberOptions))
@@ -75,74 +80,74 @@ gulp.task('less-dev-fast', function() {
         .pipe(gulp.dest(paths.lessDest))
         .pipe(livereload());
 });
-gulp.task('less', ['clean-less', 'main-bower-files'], function() {
+gulp.task('less', gulp.series('clean-less', 'main-bower-files', function() {
     return gulp.src(paths.lessSrc)
         .pipe(less())
         .pipe(gulp.dest(paths.lessDest));
-});
-gulp.task('clean-less', function() {
-    return gulp.src(paths.lessClean)
-        .pipe(vinylPaths(del));
-});
+}));
 
 // minify CSS files
-gulp.task('minify-css', ['less'], function() {
+gulp.task('minify-css', gulp.series('less', function() {
   return gulp.src(paths.minifySrc)
     .pipe(minifyCSS())
     .pipe(gulp.dest(paths.minifyDest))
-});
+}));
 
 // compile Jade to HTML
-gulp.task('jade-dev', ['clean-jade'], function() {
+gulp.task('clean-jade', function() {
+    return gulp.src(paths.jadeClean, { allowEmpty: true })
+        .pipe(vinylPaths(del));
+});
+gulp.task('jade-dev', gulp.series('clean-jade', function() {
     return gulp.src(paths.jadeSrc)
         .pipe(plumber(plumberOptions))
         .pipe(data(getJadeData))
         .pipe(jade({ pretty: true }))
         .pipe(gulp.dest(paths.jadeDest))
         .pipe(livereload());
-});
-gulp.task('jade', ['clean-jade'], function() {
+}));
+gulp.task('jade', gulp.series('clean-jade', function() {
     return gulp.src(paths.jadeSrc)
         .pipe(data(getJadeData))
         .pipe(jade({ pretty: false }))
         .pipe(gulp.dest(paths.jadeDest));
-});
+}));
 function getJadeData() {
     return JSON.parse(fs.readFileSync(paths.jadeData));
 }
-gulp.task('clean-jade', function() {
- return gulp.src(paths.jadeClean)
-        .pipe(vinylPaths(del));
-});
 
 // copy font files
-gulp.task('copy-fonts', ['main-bower-files', 'clean-copy-fonts'], function() {
+gulp.task('clean-copy-fonts', function() {
+    return gulp.src(paths.copyFontsClean, { allowEmpty: true })
+        .pipe(vinylPaths(del));
+});
+gulp.task('copy-fonts', gulp.series('main-bower-files', 'clean-copy-fonts', function() {
     return gulp.src(paths.copyFontsSrc)
         .pipe(gulp.dest(paths.copyFontsDest));
-});
+}));
 gulp.task('clean-copy-fonts', function() {
-    return gulp.src(paths.copyFontsClean)
+    return gulp.src(paths.copyFontsClean, { allowEmpty: true })
         .pipe(vinylPaths(del));
 });
 
 // copy images
-gulp.task('copy-images', ['clean-copy-images'], function() {
-    return gulp.src(paths.copyImagesSrc)
-        .pipe(gulp.dest(paths.copyImagesDest));
-});
 gulp.task('clean-copy-images', function() {
-    return gulp.src(paths.copyImagesClean)
+    return gulp.src(paths.copyImagesClean, { allowEmpty: true })
         .pipe(vinylPaths(del));
 });
+gulp.task('copy-images', gulp.series('clean-copy-images', function() {
+    return gulp.src(paths.copyImagesSrc)
+        .pipe(gulp.dest(paths.copyImagesDest));
+}));
 
 // cleans all files created by gulp
-gulp.task('clean', ['clean-main-bower-files', 'clean-less', 'clean-jade', 'clean-copy-fonts', 'clean-copy-images']);
+gulp.task('clean', gulp.parallel('clean-main-bower-files', 'clean-less', 'clean-jade', 'clean-copy-fonts', 'clean-copy-images'));
 
 // compile for production
-gulp.task('default', ['minify-css', 'jade', 'copy-fonts', 'copy-images']);
+gulp.task('default', gulp.parallel('minify-css', 'jade', 'copy-fonts', 'copy-images'));
 
 // compile for development
-gulp.task('dev', ['less-dev', 'jade-dev', 'copy-fonts', 'copy-images']);
+gulp.task('dev', gulp.parallel('less-dev', 'jade-dev', 'copy-fonts', 'copy-images'));
 
 // start static server
 gulp.task('server', function(done) {
@@ -152,11 +157,11 @@ gulp.task('server', function(done) {
 });
 
 // compile on the fly for development
-gulp.task('watch', ['dev'], function() {
+gulp.task('watch', gulp.series('dev', function() {
     livereload.listen();
-    gulp.watch(paths.lessWatch, ['less-dev-fast']);
-    gulp.watch([paths.jadeSrc, paths.jadeData], ['jade-dev']);
-});
+    gulp.watch(paths.lessWatch, gulp.series('less-dev-fast'));
+    gulp.watch([paths.jadeSrc, paths.jadeData], gulp.series('jade-dev'));
+}));
 
 // start both server and watch (both needed for livereload)
-gulp.task('server-watch', ['server', 'watch']);
+gulp.task('server-watch', gulp.series('server', 'watch'));
