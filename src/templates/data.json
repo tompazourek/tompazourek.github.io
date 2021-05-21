@@ -58,9 +58,9 @@
             "descriptionItems": [
                 "Improvements in local development experience (performance, automation, tooling, builds)",
                 "Design and implementation of processes associated with version control, code analysis, CI and CD",
-                "Performance optimization and modularization of core platform components",
-                "Consultation around software architecture and design practices",
-                "Support other development teams regarding local builds, environments, tooling, code reviews"
+                "Support other development teams regarding local builds, environments, tooling, code reviews, deployments, performance improvements, investigation of production issues",
+                "Consultation around software architecture, design practices, modularization and modernization of our monolithic eCommerce solution",
+                "Technical leadership on a new microservice project superseding a legacy system"
             ],
             "location": "Brno, Czechia",
             "time": {
@@ -285,15 +285,15 @@
                 "ORMs, Dapper, Entity Framework, NHibernate",
                 "API design, WS (SOAP, REST), system integration",
                 "System architecture, testability, SOLID principles, IoC",
+                "Automated testing, xUnit, NUnit",
                 "Cybersecurity"
             ],
             "title": "Backend"
         },
         {
             "items": [
-                "Source code management, Git, SVN",
-                "Build and workflow automation, PowerShell, Cake, AppVeyor, Gulp, LiveReload",
-                "Automated testing, xUnit, NUnit",
+                "Source code management, branching and versioning models, Git, SVN",
+                "Build and workflow automation, PowerShell, MSBuild, Cake, Gulp, LiveReload, Azure YAML Pipelines, AppVeyor",
                 "Microsoft Azure infrastructure",
                 "Administration & maintenance of IIS web servers, Windows VMs, Microsoft SQL Server VMs",
                 "Application and server monitoring"
