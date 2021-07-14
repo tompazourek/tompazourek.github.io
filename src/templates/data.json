@@ -59,7 +59,7 @@
                 "Improvements in local development experience (performance, automation, tooling, builds)",
                 "Design and implementation of processes associated with version control, code analysis, CI and CD",
                 "Support other development teams regarding local builds, environments, tooling, code reviews, deployments, performance improvements, investigation of production issues",
-                "Consultation around software architecture, design practices, modularization and modernization of our monolithic eCommerce solution",
+                "Consultation around software architecture, design practices, modularization and modernization of a monolithic eCommerce solution",
                 "Technical leadership on a new microservice project superseding a legacy system"
             ],
             "location": "Brno, Czechia",
@@ -178,7 +178,7 @@
             "title": "Web Developer"
         }
     ],
-    "lastModified": "2021-05-21",
+    "lastModified": "2021-07-14",
     "metaDescription": "I am a software engineer from Czechia with extensive experience with a diverse range of software projects. This is my CV.",
     "metaKeywords": "Tomáš Pažourek, CV, personal page, programmer, programming, software engineer, developer",
     "name": "Tomáš Pažourek",
