@@ -72,9 +72,9 @@ html(lang="en")
         h2.sr-only Summary
         p=summary
 
-      //- Skills and interests
+      //- Skills and Interests
       section#skillGroups
-        h2 Skills &amp; interests
+        h2 Skills &amp; Interests
 
         .row
           each skillGroup, index in skillGroups
@@ -92,9 +92,9 @@ html(lang="en")
                 each item in skillGroup.items
                   li=item
 
-      //- Professional experience
+      //- Professional Experience
       section#jobs
-        h2 Professional experience
+        h2 Professional Experience
 
         each job in jobs
           //- Job
@@ -199,9 +199,9 @@ html(lang="en")
               each item in school.descriptionItems
                 li=item
 
-      //- Projects & publications
+      //- Projects & Publications
       section#projects
-        h2 Projects &amp; publications
+        h2 Projects &amp; Publications
 
         each project in projects
 
@@ -233,6 +233,6 @@ html(lang="en")
           if (spans.length === 3 && spans[1].textContent === '–' && spans[2].textContent === 'now') {
             var startDate = new Date(spans[0].textContent + ' 1');
             var diffInMonths = (new Date().getFullYear() - startDate.getFullYear()) * 12 + new Date().getMonth() - startDate.getMonth();
-            li.innerHTML = '<span>' + Math.floor(diffInMonths / 12) + ' years ' + (diffInMonths % 12) + ' months</span><span> (</span>' + li.innerHTML + '<span>)</span>';
+            li.innerHTML = '<span>' + Math.floor(diffInMonths / 12) + ' years ' + (diffInMonths % 12) + ' months</span><span> (</span>' + li.innerHTML.trim() + '<span>)</span>';
           }
         });
