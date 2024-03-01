@@ -3,15 +3,9 @@
   "private": true,
   "dependencies": {
     "bootstrap": "~3.3.7",
-    "source-sans-pro": "git://github.com/adobe-fonts/source-sans-pro.git#release",
     "font-awesome": "~4.3.0"
   },
   "overrides": {
-    "source-sans-pro": {
-      "main": [
-        "{EOT,WOFF,OTF,TTF}/**/*"
-      ]
-    },
     "font-awesome": {
       "main": [
         "fonts/**/*",
@@ -23,8 +17,5 @@
         "less/**/*.less"
       ]
     }
-  },
-  "resolutions": {
-    "source-sans-pro": "release"
   }
 }

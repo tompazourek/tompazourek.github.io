@@ -34,10 +34,6 @@ var paths = {
     jadeData: './src/templates/data.json',
     jadeDest: '.',
     jadeClean: './index.html',
-
-    copyFontsSrc: './src/third-party/**/*.{ttf,otf,woff,woff2,eot,svg}',
-    copyFontsDest: './dist/third-party',
-    copyFontsClean: './dist/third-party',
     
     copyImagesSrc: './src/images/*',
     copyImagesDest: './dist/images',
@@ -116,20 +112,6 @@ function getJadeData() {
     return JSON.parse(fs.readFileSync(paths.jadeData));
 }
 
-// copy font files
-gulp.task('clean-copy-fonts', function() {
-    return gulp.src(paths.copyFontsClean, { allowEmpty: true })
-        .pipe(vinylPaths(del));
-});
-gulp.task('copy-fonts', gulp.series('main-bower-files', 'clean-copy-fonts', function() {
-    return gulp.src(paths.copyFontsSrc)
-        .pipe(gulp.dest(paths.copyFontsDest));
-}));
-gulp.task('clean-copy-fonts', function() {
-    return gulp.src(paths.copyFontsClean, { allowEmpty: true })
-        .pipe(vinylPaths(del));
-});
-
 // copy images
 gulp.task('clean-copy-images', function() {
     return gulp.src(paths.copyImagesClean, { allowEmpty: true })
@@ -141,13 +123,13 @@ gulp.task('copy-images', gulp.series('clean-copy-images', function() {
 }));
 
 // cleans all files created by gulp
-gulp.task('clean', gulp.parallel('clean-main-bower-files', 'clean-less', 'clean-jade', 'clean-copy-fonts', 'clean-copy-images'));
+gulp.task('clean', gulp.parallel('clean-main-bower-files', 'clean-less', 'clean-jade', 'clean-copy-images'));
 
 // compile for production
-gulp.task('default', gulp.parallel('minify-css', 'jade', 'copy-fonts', 'copy-images'));
+gulp.task('default', gulp.parallel('minify-css', 'jade', 'copy-images'));
 
 // compile for development
-gulp.task('dev', gulp.parallel('less-dev', 'jade-dev', 'copy-fonts', 'copy-images'));
+gulp.task('dev', gulp.parallel('less-dev', 'jade-dev', 'copy-images'));
 
 // start static server
 gulp.task('server', function(done) {
