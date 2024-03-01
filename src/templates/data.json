@@ -53,21 +53,21 @@
             "company": {
                 "name": "Oriflame Software, s.r.o.",
                 "telephone": "00420727883252",
-                "url": "https://oriflame.com/"
+                "url": "https://www.oriflame.com/"
             },
             "descriptionItems": [
-                "Improvements in local development experience (performance, automation, tooling, builds)",
-                "Design and implementation of processes associated with version control, code analysis, CI and CD",
-                "Support other development teams regarding local builds, environments, tooling, code reviews, deployments, performance improvements, investigation of production issues",
-                "Consultation around software architecture, design practices, modularization and modernization of a monolithic eCommerce solution",
-                "Technical leadership on a new microservice project superseding a legacy system"
+                "Improvements in local development environments, achieving significant enhancements in performance, automation, and build efficiency through advanced tooling and refined workflows",
+                "Designed and implemented processes for version control, code analysis, continuous integration (CI), and continuous delivery (CD), enhancing the teams' development practices",
+                "Provided expert support to development teams on local builds, environment setup, tooling, code reviews, deployments, and performance optimization, improving efficiency and quality",
+                "Contributed to the architectural consultation, design practices, and modularization strategies for updating a monolithic eCommerce solution, facilitating its technological upgrade",
+                "Participated as technical lead in a new microservice project aimed at replacing a legacy system"
             ],
             "location": "Brno, Czechia",
             "time": {
                 "from": "Nov 2019",
                 "to": "now"
             },
-            "title": "External Consultant"
+            "title": "Platform Engineer (External)"
         },
         {
             "company": {
@@ -269,6 +269,21 @@
     "skillGroups": [
         {
             "items": [
+                "C#, .NET Framework/.NET Core",
+                "Active in the open-source community as a maintainer and a contributor",
+                "Microsoft SQL Server, database design, query performance tuning",
+                "ORMs, Dapper, Entity Framework, NHibernate",
+                "Performance analysis and optimization",
+                "System architecture, testability, SOLID principles, IoC",
+                "Static code analysis, Roslyn, SonarCloud",
+                "Automated testing, xUnit, NUnit",
+                "API design, WS (SOAP, REST), system integration",
+                "Security best practices"
+            ],
+            "title": "Backend"
+        },
+        {
+            "items": [
                 "Design of large-scale applications with HTML/CSS/SASS/LESS",
                 "Experience with theming, customization, extensibility",
                 "UX on touch-based interfaces, embedded devices, responsive web design",
@@ -279,22 +294,10 @@
         },
         {
             "items": [
-                ".NET ecosystem, C# programming",
-                "Active in the open-source community as a maintainer and a contributor",
-                "Microsoft SQL Server, database design, query performance tuning",
-                "ORMs, Dapper, Entity Framework, NHibernate",
-                "API design, WS (SOAP, REST), system integration",
-                "System architecture, testability, SOLID principles, IoC",
-                "Automated testing, xUnit, NUnit",
-                "Cybersecurity"
-            ],
-            "title": "Backend"
-        },
-        {
-            "items": [
                 "Source code management, branching and versioning models, Git, SVN",
-                "Build and workflow automation, PowerShell, MSBuild, Cake, Gulp, LiveReload, Azure YAML Pipelines, AppVeyor",
-                "Microsoft Azure infrastructure",
+                "Software development lifecycle (SDLC)",
+                "Build and workflow automation, CI/CD, PowerShell, MSBuild, Cake, Gulp, LiveReload, Azure YAML Pipelines, AppVeyor",
+                "Microsoft Azure cloud infrastructure",
                 "Administration & maintenance of IIS web servers, Windows VMs, Microsoft SQL Server VMs",
                 "Application and server monitoring"
             ],

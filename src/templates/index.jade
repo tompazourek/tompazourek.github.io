@@ -83,7 +83,9 @@ html(lang="en")
         h2 Skills &amp; interests
 
         .row
-          each skillGroup in skillGroups
+          each skillGroup, index in skillGroups
+            if index % 2 === 0 && index !== 0
+              .row
 
             //- Skill group
             .skillGroup.col-sm-6
@@ -91,7 +93,7 @@ html(lang="en")
               //- Title
               h3=skillGroup.title
 
-              //- Descrtiption
+              //- Description
               ul
                 each item in skillGroup.items
                   li=item
