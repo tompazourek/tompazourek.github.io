@@ -232,3 +232,13 @@ html(lang="en")
       //- Footer
       footer
         p Last modified on #{lastModified}.
+
+      script.
+        Array.from(document.querySelectorAll('li')).forEach(function(li) {
+          var spans = li.querySelectorAll('span');
+          if (spans.length === 3 && spans[1].textContent === '–' && spans[2].textContent === 'now') {
+            var startDate = new Date(spans[0].textContent + ' 1');
+            var diffInMonths = (new Date().getFullYear() - startDate.getFullYear()) * 12 + new Date().getMonth() - startDate.getMonth();
+            li.innerHTML = '<span>' + Math.floor(diffInMonths / 12) + ' years ' + (diffInMonths % 12) + ' months</span><span> (</span>' + li.innerHTML + '<span>)</span>';
+          }
+        });
