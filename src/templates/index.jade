@@ -231,8 +231,10 @@ html(lang="en")
         Array.from(document.querySelectorAll('li')).forEach(function(li) {
           var spans = li.querySelectorAll('span');
           if (spans.length === 3 && spans[1].textContent === '–' && spans[2].textContent === 'now') {
-            var startDate = new Date(spans[0].textContent + ' 1');
-            var diffInMonths = (new Date().getFullYear() - startDate.getFullYear()) * 12 + new Date().getMonth() - startDate.getMonth();
+            var [month, year] = spans[0].textContent.split(' ');
+            var startDate = new Date(year, ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'].indexOf(month), 1);
+            var now = new Date();
+            var diffInMonths = (now.getFullYear() - startDate.getFullYear()) * 12 + now.getMonth() - startDate.getMonth();
             li.innerHTML = '<span>' + Math.floor(diffInMonths / 12) + ' years ' + (diffInMonths % 12) + ' months</span><span> (</span>' + li.innerHTML.trim() + '<span>)</span>';
           }
         });
