@@ -178,7 +178,7 @@
             "title": "Web Developer"
         }
     ],
-    "lastModified": "2021-07-14",
+    "lastModified": "2024-03-01",
     "metaDescription": "I am a software engineer from Czechia with extensive experience with a diverse range of software projects. This is my CV.",
     "metaKeywords": "Tomáš Pažourek, CV, personal page, programmer, programming, software engineer, developer",
     "name": "Tomáš Pažourek",
@@ -201,6 +201,13 @@
         },
         {
             "descriptionItems": [
+                "Extension method for StringComparer that adds support for natural sorting (e.g. \"abc1\", \"abc2\", \"abc10\" instead of \"abc1\", \"abc10\", \"abc2\")"
+            ],
+            "title": "NaturalSort.Extension",
+            "url": "https://github.com/tompazourek/NaturalSort.Extension"
+        },
+        {
+            "descriptionItems": [
                 "Implementation of rational number arithmetic for .NET with arbitrary precision"
             ],
             "title": "Rationals .NET",
@@ -215,10 +222,10 @@
         },
         {
             "descriptionItems": [
-                "Extension method for StringComparer that adds support for natural sorting (e.g. \"abc1\", \"abc2\", \"abc10\" instead of \"abc1\", \"abc10\", \"abc2\")"
+                "Heroicons (https://heroicons.com/) that are easy to use in ASP.NET Core MVC as TagHelpers."
             ],
-            "title": "NaturalSort.Extension",
-            "url": "https://github.com/tompazourek/NaturalSort.Extension"
+            "title": "Heroicons.AspNetCore",
+            "url": "https://github.com/tompazourek/Heroicons.AspNetCore"
         },
         {
             "descriptionItems": [
