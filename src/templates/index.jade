@@ -72,26 +72,6 @@ html(lang="en")
         h2.sr-only Summary
         p=summary
 
-      //- Skills and Interests
-      section#skillGroups
-        h2 Skills &amp; Interests
-
-        .row
-          each skillGroup, index in skillGroups
-            if index % 2 === 0 && index !== 0
-              .row
-
-            //- Skill group
-            .skillGroup.col-sm-6
-
-              //- Title
-              h3=skillGroup.title
-
-              //- Description
-              ul
-                each item in skillGroup.items
-                  li=item
-
       //- Professional Experience
       section#jobs
         h2 Professional Experience
@@ -168,6 +148,26 @@ html(lang="en")
             ul
               each item in job.descriptionItems
                 li=item
+
+      //- Skills and Interests
+      section#skillGroups
+        h2 Skills &amp; Interests
+
+        .row
+          each skillGroup, index in skillGroups
+            if index % 2 === 0 && index !== 0
+              .row
+
+            //- Skill group
+            .skillGroup.col-sm-6
+
+              //- Title
+              h3=skillGroup.title
+
+              //- Description
+              ul
+                each item in skillGroup.items
+                  li=item
 
       //- Education
       section#education
