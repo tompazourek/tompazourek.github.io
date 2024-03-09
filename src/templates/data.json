@@ -56,18 +56,22 @@
                 "url": "https://www.oriflame.com/"
             },
             "descriptionItems": [
-                "Improvements in local development environments, achieving significant enhancements in performance, automation, and build efficiency through advanced tooling and refined workflows",
-                "Designed and implemented processes for version control, code analysis, continuous integration (CI), and continuous delivery (CD), enhancing the teams' development practices",
-                "Provided expert support to development teams on local builds, environment setup, tooling, code reviews, deployments, and performance optimization, improving efficiency and quality",
-                "Contributed to the architectural consultation, design practices, and modularization strategies for updating a monolithic eCommerce solution, facilitating its technological upgrade",
-                "Participated as technical lead in a new microservice project aimed at replacing a legacy system"
+                "Maintained and modernized the company's flagship eCommerce application, a large monolithic system built on the .NET Framework running in Microsoft Azure",
+                "Contributed to architectural consultations and design practices, facilitating its technological upgrade and ensuring alignment with modern standards",
+                "Designed and implemented processes for version control, code analysis, continuous integration (CI), and continuous delivery (CD), as well as code reviews",
+                "Improved local development environments, achieving notable enhancements in performance, automation, and build efficiency through customized tooling",
+                "Served as the final escalation point for resolving complex and critical system incidents, leveraging an in-depth understanding of the platform architecture and advanced troubleshooting skills to ensure system reliability",
+                "Identified performance bottlenecks and implemented optimizations, improving system efficiency and achieving cost reductions without compromising on performance",
+                "Collaborated with feature teams to make architectural decisions that enhanced system stability and maintenance, ensuring future scalability and reliability",
+                "Set up performance monitoring tools to quickly find and fix any system problems, helping to keep our services running smoothly for our users",
+                "Participated as a technical lead in a new microservice project aimed at replacing a legacy system, ensuring a seamless transition and integration with existing services"
             ],
             "location": "Brno, Czechia",
             "time": {
                 "from": "Nov 2019",
                 "to": "now"
             },
-            "title": "Platform Engineer (External)"
+            "title": "Platform Engineer"
         },
         {
             "company": {
@@ -81,7 +85,7 @@
                 "Built on top of Microsoft stack (.NET, SQL Server, Azure)",
                 "Definition of development processes with regards to modern practices",
                 "Maintenance of legacy systems in Classic ASP and challenges of migration to modern systems",
-                "Technical leadership, part of a growing company (started as a 2-person company, nowadays 5 employees)",
+                "Technical leadership, part of a small growing company (started as a 2-person company, 5 employees at the end)",
                 "Working full-time remote for the whole period, experienced with the challenges of telecommuting"
             ],
             "location": "Huddersfield, United Kingdom",
@@ -90,7 +94,7 @@
                 "from": "Jul 2015",
                 "to": "Dec 2019"
             },
-            "title": "Lead Platform Developer"
+            "title": "Lead Developer"
         },
         {
             "company": {
@@ -178,7 +182,7 @@
             "title": "Web Developer"
         }
     ],
-    "lastModified": "2024-03-01",
+    "lastModified": "2024-03-09",
     "metaDescription": "I am a software engineer from Czechia with extensive experience with a diverse range of software projects. This is my CV.",
     "metaKeywords": "Tomáš Pažourek, CV, personal page, programmer, programming, software engineer, developer",
     "name": "Tomáš Pažourek",
