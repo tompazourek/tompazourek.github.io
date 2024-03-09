@@ -2,7 +2,7 @@
 
 **Personal page (CV).**
 
-Built using following libraries:
+Running since 2015. Built using the following libraries:
 
 - [Font Awesome](https://github.com/FortAwesome/Font-Awesome) (icon typeface)
 - [LESS](https://github.com/less/less.js) (for stylesheets)
