@@ -57,21 +57,20 @@
             },
             "descriptionItems": [
                 "Maintained and modernized the company's flagship eCommerce application, a large monolithic system built on the .NET Framework running in Microsoft Azure",
-                "Contributed to architectural consultations and design practices, facilitating its technological upgrade and ensuring alignment with modern standards",
-                "Designed and implemented processes for version control, code analysis, continuous integration (CI), and continuous delivery (CD), as well as code reviews",
-                "Improved local development environments, achieving notable enhancements in performance, automation, and build efficiency through customized tooling",
-                "Served as the final escalation point for resolving complex and critical system incidents, leveraging an in-depth understanding of the platform architecture and advanced troubleshooting skills to ensure system reliability",
-                "Identified performance bottlenecks and implemented optimizations, improving system efficiency and achieving cost reductions without compromising on performance",
-                "Collaborated with feature teams to make architectural decisions that enhanced system stability and maintenance, ensuring future scalability and reliability",
-                "Set up performance monitoring tools to quickly find and fix any system problems, helping to keep our services running smoothly for our users",
-                "Participated as a technical lead in a new microservice project aimed at replacing a legacy system, ensuring a seamless transition and integration with existing services"
+                "Designed and implemented processes and tooling around version control, code analysis, continuous integration (CI) and deployment",
+                "Contributed to architectural consultations and design practices, facilitating its technological upgrade and alignment with modern .NET ecosystem",
+                "Improved local development environment, achieving notable enhancements in performance, automation, and build efficiency through customized tooling",
+                "Served as the final escalation point for resolving complex and critical system incidents",
+                "Identified performance bottlenecks and implemented optimizations, improving efficiency and achieving cost reductions",
+                "Set up new monitoring tools and dashboards to quickly identify system problems improving overall system observability",
+                "Participated as a technical lead in a new microservice project replacing a legacy system, focusing mainly on integration with existing microservice ecosystem, setup of service boundaries, and onboarding of new engineers"
             ],
             "location": "Brno, Czechia",
             "time": {
                 "from": "Nov 2019",
                 "to": "now"
             },
-            "title": "Platform Engineer"
+            "title": "Platform Architect"
         },
         {
             "company": {
@@ -182,7 +181,7 @@
             "title": "Web Developer"
         }
     ],
-    "lastModified": "2024-03-09",
+    "lastModified": "2024-04-01",
     "metaDescription": "I am a software engineer from Czechia with extensive experience with a diverse range of software projects. This is my CV.",
     "metaKeywords": "Tomáš Pažourek, CV, personal page, programmer, programming, software engineer, developer",
     "name": "Tomáš Pažourek",
