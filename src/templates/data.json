@@ -56,7 +56,7 @@
                 "url": "https://www.solarwinds.com/"
             },
             "descriptionItems": [
-                "Responsible for development of underlying platform for .NET cloud microservices, associated tools, libraries, processes and automation"
+                "Responsible for development and technical leadership of underlying platform for .NET cloud microservices, associated tools, libraries, processes and automation"
             ],
             "location": "Brno, Czechia",
             "time": {
@@ -339,6 +339,6 @@
             "title": "Leadership"
         }
     ],
-    "summary": "I am a software engineer from Czechia, with over a decade of experience in full-stack development, specializing in the .NET ecosystem, across a diverse range of software projects. I am dedicated to modernizing and enhancing web applications to ensure scalability and reliability, focusing my efforts on driving technological upgrades, refining development workflows, and boosting system performance and robustness.",
+    "summary": "I am a software engineer from Czechia, with over a decade of experience in full-stack development, specializing in the .NET ecosystem and cloud applications, across a diverse range of software projects. I am focusing my efforts on driving technological upgrades, refining development workflows, boosting system performance, robustness, and reliability.",
     "title": "Software Engineer"
 }
