@@ -234,7 +234,15 @@ html(lang="en")
             var [month, year] = spans[0].textContent.split(' ');
             var startDate = new Date(year, ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'].indexOf(month), 1);
             var now = new Date();
-            var diffInMonths = (now.getFullYear() - startDate.getFullYear()) * 12 + now.getMonth() - startDate.getMonth();
-            li.innerHTML = '<span>' + Math.floor(diffInMonths / 12) + ' years ' + (diffInMonths % 12) + ' months</span><span> (</span>' + li.innerHTML.trim() + '<span>)</span>';
+            var nextDay = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1);
+            var diffInMonths = (nextDay.getFullYear() - startDate.getFullYear()) * 12 + nextDay.getMonth() - startDate.getMonth();
+            var durationText;
+            if (diffInMonths === 0) {
+              var diffInDays = Math.floor((nextDay - startDate) / (1000 * 60 * 60 * 24));
+              durationText = diffInDays + (diffInDays === 1 ? ' day' : ' days');
+            } else {
+              durationText = Math.floor(diffInMonths / 12) + ' years ' + (diffInMonths % 12) + ' months';
+            }
+            li.innerHTML = '<span>' + durationText + '</span><span> (</span>' + li.innerHTML.trim() + '<span>)</span>';
           }
         });

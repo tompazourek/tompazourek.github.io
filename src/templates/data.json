@@ -51,6 +51,22 @@
     "jobs": [
         {
             "company": {
+                "name": "SolarWinds Czech, s.r.o.",
+                "telephone": "00420511120630",
+                "url": "https://www.solarwinds.com/"
+            },
+            "descriptionItems": [
+                "Responsible for development of underlying platform for .NET cloud microservices, associated tools, libraries, processes and automation"
+            ],
+            "location": "Brno, Czechia",
+            "time": {
+                "from": "Aug 2024",
+                "to": "now"
+            },
+            "title": "Staff Software Engineer"
+        },
+        {
+            "company": {
                 "name": "Oriflame Software, s.r.o.",
                 "telephone": "00420727883252",
                 "url": "https://www.oriflame.com/"
@@ -67,8 +83,9 @@
             ],
             "location": "Brno, Czechia",
             "time": {
+                "duration": "4 years 9 months",
                 "from": "Nov 2019",
-                "to": "now"
+                "to": "Jul 2024"
             },
             "title": "Platform Architect"
         },
@@ -181,7 +198,7 @@
             "title": "Web Developer"
         }
     ],
-    "lastModified": "2024-04-01",
+    "lastModified": "2024-08-01",
     "metaDescription": "I am a software engineer from Czechia with extensive experience with a diverse range of software projects. This is my CV.",
     "metaKeywords": "Tomáš Pažourek, CV, personal page, programmer, programming, software engineer, developer",
     "name": "Tomáš Pažourek",
